@@ -12,28 +12,28 @@ export const ExperienceSection: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-8 border-b border-ivory-300">
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-earth-600 font-semibold block mb-2">
-              03 // Practical Industry Engagement
+              03 // INDUSTRY & RESEARCH INTERNSHIPS
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-ink-900 tracking-tight">
-              Experience
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-display font-black text-ink-900 tracking-tight">
+              Work Experience
             </h2>
           </div>
           <div className="text-sm font-mono text-ink-500 max-w-sm">
-            Hands-on software development, backend engineering, and codebase contributions.
+            Hands-on software development, Java backend systems, and applied machine learning models.
           </div>
         </div>
 
-        {/* Experience Timeline / Minimal Editorial Cards */}
+        {/* Experience Timeline Cards */}
         <div className="space-y-8 max-w-5xl">
           {experience.map((item) => (
             <div
               key={item.id}
-              className="p-8 md:p-10 rounded-2xl bg-white border border-ivory-300 shadow-sm transition-all duration-300 hover:shadow-md"
+              className="p-8 md:p-10 rounded-2xl bg-white border border-ivory-300 shadow-sm hover:shadow-md transition-all duration-300 relative group"
             >
               <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-6 pb-6 border-b border-ivory-200">
                 <div>
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-earth-100 text-earth-700 text-xs font-mono font-medium mb-3">
-                    <Briefcase className="w-3.5 h-3.5" />
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-earth-100 text-earth-800 text-xs font-mono font-semibold mb-3">
+                    <Briefcase className="w-3.5 h-3.5 text-earth-600" />
                     <span>{item.type}</span>
                   </div>
 
@@ -41,18 +41,18 @@ export const ExperienceSection: React.FC = () => {
                     {item.role}
                   </h3>
 
-                  <div className="text-base font-semibold text-earth-600 mt-0.5">
+                  <div className="text-base font-bold text-earth-700 mt-1">
                     {item.company}
                   </div>
                 </div>
 
-                <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-ink-500">
-                  <div className="flex items-center gap-1.5 bg-ivory-100 px-3 py-1.5 rounded border border-ivory-200">
-                    <Calendar className="w-3.5 h-3.5 text-earth-500" />
+                <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-ink-600">
+                  <div className="flex items-center gap-1.5 bg-ivory-100 px-3 py-1.5 rounded-lg border border-ivory-200">
+                    <Calendar className="w-3.5 h-3.5 text-earth-600" />
                     <span>{item.period}</span>
                   </div>
-                  <div className="flex items-center gap-1.5 bg-ivory-100 px-3 py-1.5 rounded border border-ivory-200">
-                    <MapPin className="w-3.5 h-3.5 text-earth-500" />
+                  <div className="flex items-center gap-1.5 bg-ivory-100 px-3 py-1.5 rounded-lg border border-ivory-200">
+                    <MapPin className="w-3.5 h-3.5 text-earth-600" />
                     <span>{item.location}</span>
                   </div>
                 </div>
@@ -63,10 +63,10 @@ export const ExperienceSection: React.FC = () => {
                 {item.summary}
               </p>
 
-              {/* Key Responsibilities */}
-              <div className="mb-6 space-y-2.5">
+              {/* Responsibilities */}
+              <div className="mb-6 space-y-2">
                 <h4 className="text-xs font-mono uppercase tracking-wider text-ink-500 font-semibold mb-3">
-                  Key Engineering Contributions
+                  Key Engineering Contributions:
                 </h4>
                 {item.responsibilities.map((resp, rIdx) => (
                   <div key={rIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-ink-700">
@@ -76,11 +76,11 @@ export const ExperienceSection: React.FC = () => {
                 ))}
               </div>
 
-              {/* Technologies Applied */}
+              {/* Tech stack */}
               <div className="pt-6 border-t border-ivory-200 flex flex-wrap items-center gap-2">
                 <span className="text-xs font-mono text-ink-500 flex items-center gap-1 mr-2">
                   <Code className="w-3.5 h-3.5" />
-                  Stack:
+                  Technologies:
                 </span>
                 {item.technologies.map((tech, tIdx) => (
                   <span

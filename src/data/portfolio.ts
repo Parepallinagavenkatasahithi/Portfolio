@@ -4,73 +4,112 @@ export const portfolioData: PortfolioData = {
   personal: {
     name: "Naga Venkata Sahithi Parepalli",
     displayName: "SAHITHI",
-    tagline: "Aspiring Software Engineer & AI Specialist",
-    headline: "If it was easy, everyone would be doing it.",
-    conciseBio: "Aspiring software engineer passionate about architecting intelligent systems, generative intelligence, and exploring quantum-classical computing boundaries to solve rigorous engineering challenges.",
+    shortName: "Sahithi",
+    tagline: "Software Engineer | AI/ML & Quantum Computing Enthusiast",
+    quote: "If it was easy, everyone would be doing it?",
+    headline: "If it was easy, everyone would be doing it?",
+    heroGreeting: "Hi, I'm Sahithi, a passionate Computer Science Engineering student dedicated to building intelligent systems through AI, ML, and Quantum innovations.",
+    conciseBio: "Computer Science and Engineering student with hands-on experience in Java development, Object-Oriented Programming, Data Structures and Algorithms, and SQL, with strong practical experience in AI/ML, Generative AI, and Quantum Computing. Led team Quantum Coders to 1st place in the Amaravati Quantum Valley Hackathon semifinals and Grand Finale qualification.",
     fullBio: [
-      "I am an undergraduate technologist currently pursuing a B.Tech in Computer Science and Engineering with an academic standing of 8.9 CGPA. My curiosity lies at the intersection of robust software engineering, scalable artificial intelligence, and quantum computing paradigms.",
-      "Rather than treating machine learning as an abstraction, I focus on the first-principles engineering required to build production-grade, multimodal pipelines, dynamic algorithmic pricing engines, and quantum approximate optimization algorithms (QAOA).",
-      "As a team lead and technical builder, I thrive in high-stakes hackathons, competitive challenges, and collaborative engineering environments where clean code, structural clarity, and analytical rigor drive tangible outcomes."
+      "I'm Sahithi — a Computer Science Engineering student passionate about transforming complex algorithmic ideas into intelligent, real-world solutions. With an academic CGPA of 8.9 / 10.0 and hands-on experience across multiple internships, I've built a strong foundation in software engineering, Quantum Computing, AI/ML, and cloud systems, driven by deep curiosity and continuous learning.",
+      "Through hands-on engineering roles at ElevateIQ Soft Tech, Infosys Springboard, Edunet Foundation, and Axcentra, I've developed end-to-end multimodal forensics systems, dynamic pricing engines, intelligent chatbots, and cloud workflows.",
+      "One of my flagship achievements was leading team 'Quantum Coders' to secure 1st place in the semifinals of the Amaravati Quantum Valley Hackathon 2025 (AQVH916) and advancing to the Grand Finale with an INR 10,000 prize. We engineered a hybrid quantum-classical QAOA portfolio optimizer, earning recognition from APSCHE, IBM, and TCS with regional media coverage.",
+      "I was also selected among the top 3,000 out of 65,000+ applicants for the WISER (BQPhy®) Quantum Computing Program, earned a fully funded $1,000 seat in the WISER Summer Program 2026, and received the Quantum Innovation Excellence Award at SRM University AP's 36-hour QC² national hackathon."
     ],
-    problemSolvingPhilosophy: "First-principles deconstruction, modular software design, and verifiable algorithmic correctness. Every problem is an opportunity to eliminate friction and build durable, scalable systems.",
+    problemSolvingPhilosophy: "Code with purpose, learn with passion, and build with heart. First-principles deconstruction, modular software design, and verifiable algorithmic correctness.",
     education: {
+      college: "PSCMR College of Engineering and Technology (PSCMRCET)",
+      university: "Jawaharlal Nehru Technological University Kakinada (JNTUK)",
       degree: "B.Tech in Computer Science and Engineering",
-      specialization: "Artificial Intelligence, Data Systems & Software Engineering",
-      status: "Currently Pursuing B.Tech",
-      cgpa: "8.9 / 10",
-      highlight: "Distinction academic record with leadership across technical research initiatives and competitive hackathons."
+      status: "Currently Pursuing B.Tech", // NEVER graduate or 2027 graduate
+      cgpa: "8.9 / 10.0",
+      location: "Vijayawada, Andhra Pradesh, India",
+      highlight: "Academic distinction with 8.9 CGPA, Department technical leadership, and national hackathon finalist recognitions."
     },
+    schooling: [
+      {
+        institution: "Kakarapathi Bhavanarayana College",
+        qualification: "Intermediate (MPC)",
+        score: "91%",
+        location: "Andhra Pradesh, India"
+      },
+      {
+        institution: "Geethanjali E.M. High School",
+        qualification: "Class X Secondary School Education",
+        score: "98%",
+        location: "Andhra Pradesh, India"
+      }
+    ],
     highlightClaim: {
       count: "30+",
-      label: "Technical Builds & Projects",
-      sublabel: "Spanning AI/ML, Quantum Algorithms, Full-Stack Architecture & Data Systems"
+      label: "Real World Projects & Technical Builds",
+      sublabel: "Hands-on experience delivering real-world AI, ML, Quantum and Java systems."
     },
     profileImage: {
       src: "/assets/images/profile/sahithi_portrait.jpg",
       alt: "Naga Venkata Sahithi Parepalli — Software Engineer & AI Specialist",
       caption: "Sahithi Parepalli — Building intelligent applications with algorithmic rigor.",
-      objectPosition: "center 25%",
+      objectPosition: "center 20%",
       aspectRatio: "portrait"
     },
     resumePath: "/assets/resume/Sahithi_Parepalli_Resume.pdf",
+    contact: {
+      phone: "+91 7793923299",
+      email: "sahithiparepalli11@gmail.com",
+      location: "Vijayawada, Andhra Pradesh, India"
+    },
     social: {
       github: "https://github.com/Parepallinagavenkatasahithi",
-      linkedin: "https://linkedin.com/in/naga-venkata-sahithi/",
-      email: "mailto:parepalli.sahithi@example.com", // Replace with your verified email
-      displayEmail: "parepalli.sahithi@example.com"  // Replace with your verified email
+      linkedin: "https://www.linkedin.com/in/naga-venkata-sahithi/",
+      email: "mailto:sahithiparepalli11@gmail.com",
+      displayEmail: "sahithiparepalli11@gmail.com"
     },
     stats: [
       {
         value: "8.9",
         label: "B.Tech CGPA",
-        description: "Currently pursuing B.Tech in Computer Science & Engineering"
+        description: "Currently pursuing B.Tech in CSE at PSCMRCET"
       },
       {
         value: "30+",
         label: "Projects & Builds",
-        description: "End-to-end applications across AI, QAOA, and Software Systems"
+        description: "Production-grade AI, Quantum & Software Systems"
       },
       {
-        value: "Team Lead",
-        label: "Quantum Coders",
-        description: "Leading competitive quantum algorithmic challenge teams"
+        value: "1st Place",
+        label: "AQVH Semifinals",
+        description: "Led team Quantum Coders to Grand Finale & prize"
       },
       {
-        value: "100%",
-        label: "First-Principles Focus",
-        description: "Zero fluff, high impact, modular and maintainable codebases"
+        value: "Top 3K",
+        label: "WISER Selection",
+        description: "Selected among 65,000+ global applicants"
       }
     ]
   },
+
+  // Organizations & Internships ticker for the dark band
+  companiesWorkedWith: [
+    { name: "ElevateIQ Soft Tech", role: "Java Software Engineer", period: "Aug 2026 – Present" },
+    { name: "Infosys Springboard", role: "AI Intern & Pragati Cohort 5", period: "2025" },
+    { name: "Edunet Foundation", role: "AI & Cloud Intern", period: "2025" },
+    { name: "Axcentra", role: "ML & AI Intern", period: "2025" },
+    { name: "SkillDzire", role: "Artificial Intelligence Intern", period: "2025" },
+    { name: "WISER Quantum (BQPhy®)", role: "Selected Cohort & Summer 2026", period: "2025 – 2026" },
+    { name: "SRM University AP (QC²)", role: "Quantum Innovation Award", period: "2026" },
+    { name: "Skill Wallet", role: "AI/ML Training", period: "2026" },
+    { name: "CodeAlpha", role: "Python Programming Intern", period: "2025" },
+    { name: "StaxTech", role: "Software Developer", period: "2025" }
+  ],
 
   expertise: [
     {
       id: "ai-ml",
       number: "01",
       title: "AI & Machine Learning",
-      tagline: "Predictive Modeling, Computer Vision & Multimodal Forensics",
+      tagline: "Multimodal Forensics, Computer Vision & Predictive Models",
       description: "Developing robust statistical learning pipelines, deep neural networks, and computer vision models designed for high accuracy and low-latency inference on complex multimodal signals.",
-      technologies: ["PyTorch", "TensorFlow", "Scikit-Learn", "OpenCV", "Transformers", "XGBoost"],
+      technologies: ["PyTorch", "TensorFlow", "Scikit-Learn", "OpenCV", "LightGBM", "XGBoost", "MediaPipe"],
       capabilities: [
         "Multimodal media-forensics and deepfake detection",
         "Predictive modeling and non-linear regression engines",
@@ -82,9 +121,9 @@ export const portfolioData: PortfolioData = {
       id: "gen-ai",
       number: "02",
       title: "Generative AI & RAG",
-      tagline: "Context-Aware LLM Pipelines & Knowledge Retrieval Systems",
-      description: "Architecting context-augmented generative systems leveraging dense vector retrieval, semantic embeddings, and orchestration frameworks for domain-grounded intelligence.",
-      technologies: ["LangChain", "LlamaIndex", "ChromaDB", "FAISS", "Hugging Face", "FastAPI"],
+      tagline: "Context-Aware LLM Pipelines, Gemini API & Dense Retrieval",
+      description: "Architecting context-augmented generative systems leveraging Google Gemini, dense vector retrieval, semantic embeddings, and orchestration frameworks for domain-grounded intelligence.",
+      technologies: ["LangChain", "Vertex AI", "Google AI Studio", "ChromaDB", "FAISS", "Hugging Face", "FastAPI"],
       capabilities: [
         "Retrieval-Augmented Generation (RAG) architecture",
         "Vector search indexing and hybrid retrieval strategies",
@@ -95,10 +134,10 @@ export const portfolioData: PortfolioData = {
     {
       id: "software-eng",
       number: "03",
-      title: "Software Engineering",
-      tagline: "Modular Backend Architectures, Clean Code & API Design",
+      title: "Software Engineering (Java)",
+      tagline: "Modular Backend Architectures, Clean OOP & REST APIs",
       description: "Building reliable, scalable backend services and responsive frontends following SOLID principles, design patterns, clean abstractions, and testable micro-architectures.",
-      technologies: ["Java", "Python", "TypeScript", "React", "Spring Boot / FastAPI", "PostgreSQL", "Git"],
+      technologies: ["Java", "Spring Boot", "OOP", "Data Structures", "REST APIs", "SQL / DBMS", "Git", "Docker"],
       capabilities: [
         "Enterprise-grade Object-Oriented Java development",
         "RESTful API design and asynchronous request handling",
@@ -109,10 +148,10 @@ export const portfolioData: PortfolioData = {
     {
       id: "quantum-computing",
       number: "04",
-      title: "Quantum Computing",
+      title: "Quantum Computing (QAOA)",
       tagline: "NISQ Algorithms, Variational Circuits & QAOA Optimization",
       description: "Exploring hybrid quantum-classical algorithms, variational quantum eigensolvers, and QAOA applied to combinatorially complex portfolio allocation and optimization problems.",
-      technologies: ["Qiskit", "Pennylane", "QAOA", "VQE", "NumPy", "Matplotlib"],
+      technologies: ["Qiskit", "PennyLane", "QAOA", "CVXPY", "PySide6", "NumPy", "Matplotlib"],
       capabilities: [
         "Formulating QUBO / Ising Hamiltonians for combinatorial problems",
         "Parameterized quantum circuit design and statevector simulation",
@@ -121,17 +160,17 @@ export const portfolioData: PortfolioData = {
       ]
     },
     {
-      id: "data-science",
+      id: "cloud-data",
       number: "05",
-      title: "Data Science & Analytics",
-      tagline: "Exploratory Data Analysis, Statistical Rigor & Insight Visualization",
-      description: "Transforming unstructured, noisy real-world data into actionable mathematical models and decision engines through disciplined hypothesis testing and visual analytics.",
-      technologies: ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Statsmodels", "SQL"],
+      title: "Cloud & Intelligent Workflows",
+      tagline: "Cloud API Integrations, Docker Containers & Streamlit UIs",
+      description: "Deploying intelligent services and automated pipelines with Docker, Streamlit dashboards, and cloud integrations across AWS, Google Cloud, and IBM watsonx.ai.",
+      technologies: ["Docker", "AWS APAC", "Vertex AI", "Streamlit", "Flask", "MLflow", "IBM watsonx.ai"],
       capabilities: [
-        "High-volume data cleaning and missingness imputation",
-        "Exploratory data analysis (EDA) and pattern detection",
-        "Statistical hypothesis formulation and significance testing",
-        "Interactive executive dashboard and metric reporting"
+        "Microservice containerization with Docker",
+        "Third-party API integration (OpenAI, OpenWeather, OpenCage)",
+        "Automated model lifecycle tracking with MLflow",
+        "Interactive executive dashboards with Streamlit"
       ]
     }
   ],
@@ -139,19 +178,78 @@ export const portfolioData: PortfolioData = {
   experience: [
     {
       id: "elevateiq-java",
-      role: "Java Developer",
-      company: "ElevateIQ",
-      period: "Internship / Role", // Editable period
-      location: "Remote / Hybrid",   // Editable location
+      role: "Java Software Engineer",
+      company: "ElevateIQ Soft Tech Pvt. Ltd",
+      period: "August 2026 – Present",
+      location: "Chennai, Tamil Nadu, India (Hybrid)",
       type: "Professional Engineering Experience",
-      summary: "Focused on core Java application development, object-oriented design, modular service architecture, and back-end integration pipelines.",
+      summary: "Working on core Java development assignments, scalable backend routines, object-oriented design, and maintainable enterprise service architecture.",
       responsibilities: [
-        "Engineered scalable backend modules using modern Java paradigms and object-oriented architectural patterns.",
-        "Collaborated on designing robust RESTful services, streamlining data interchange and handling edge-case validation.",
-        "Refactored legacy routines to improve memory footprint, execution latency, and algorithmic efficiency.",
-        "Participated in agile code reviews, unit testing, and version control workflows to maintain production code hygiene."
+        "Completed Java development assignments focused on practical software development and backend workflows.",
+        "Applied Object-Oriented Programming and robust exception handling to write structured, maintainable code.",
+        "Practiced deep debugging, memory optimization, and algorithmic problem-solving to strengthen core Java skills."
       ],
-      technologies: ["Java", "OOP", "Data Structures", "REST APIs", "Git", "JUnit", "SQL"]
+      technologies: ["Java", "OOP", "Data Structures", "Exception Handling", "REST APIs", "SQL", "Git"]
+    },
+    {
+      id: "infosys-ai-intern",
+      role: "Artificial Intelligence Intern",
+      company: "Infosys Springboard",
+      period: "September 2025 – December 2025",
+      location: "Virtual / Remote",
+      type: "Industry Internship",
+      summary: "Developed and optimized machine learning models for real-world AI applications covering end-to-end workflows including preprocessing, model training, evaluation, and deployment.",
+      responsibilities: [
+        "Built an AI-powered customer support chatbot using NLP techniques achieving 90%+ query accuracy.",
+        "Designed a dynamic price optimization algorithm using machine learning to maximize revenue based on real-time market demand analysis.",
+        "Executed model evaluation pipelines, hyperparameter tuning, and metric benchmarking."
+      ],
+      technologies: ["Python", "NLP", "Machine Learning", "Scikit-learn", "Chatbot Development", "Pandas"]
+    },
+    {
+      id: "infosys-pragati-cohort5",
+      role: "Pragati Path To Future (Cohort-5)",
+      company: "Infosys Springboard",
+      period: "April 2025 – July 2025",
+      location: "Virtual / Remote",
+      type: "Selective 10-Week Cohort",
+      summary: "Completed the prestigious Infosys Pragathi Cohort 5 program gaining practical exposure to Python programming, data science fundamentals, AI concepts, and core software engineering principles.",
+      responsibilities: [
+        "Mastered advanced Python programming, data science workflows, and software engineering design principles.",
+        "Collaborated with peers on team-based technical sprints and modular software deliverables.",
+        "Refined technical communication, resume building, and professional development through structured instructor-led modules."
+      ],
+      technologies: ["Python", "Data Science", "AI Fundamentals", "Software Engineering", "Agile Collaboration"]
+    },
+    {
+      id: "edunet-ai-cloud",
+      role: "Artificial Intelligence & Cloud Technology Intern",
+      company: "Edunet Foundation",
+      period: "September 2025 – November 2025",
+      location: "Virtual / Remote",
+      type: "AI & Cloud Internship",
+      summary: "Worked as an AI & Cloud Intern developing an AI-based Travel Planner web application with real-time multi-API orchestration.",
+      responsibilities: [
+        "Developed an AI-based Travel Planner web app using Python and Streamlit.",
+        "Integrated OpenAI, OpenWeather, and OpenCage APIs for real-time itinerary generation, live weather data, and location mapping.",
+        "Gained hands-on experience in API integration, cloud deployment, and AI-driven application development."
+      ],
+      technologies: ["Python", "Streamlit", "OpenAI API", "OpenWeather API", "OpenCage API", "Cloud Deployment"]
+    },
+    {
+      id: "axcentra-intern",
+      role: "Machine Learning & AI Intern",
+      company: "Axcentra",
+      period: "October 2025 – November 2025",
+      location: "Virtual / Remote",
+      type: "Internship",
+      summary: "Collaborated on machine learning model development, data preprocessing pipelines, and exploratory data analysis for intelligent predictive services.",
+      responsibilities: [
+        "Implemented supervised learning pipelines and evaluated performance on structured datasets.",
+        "Cleaned and engineered domain-specific features to boost classification and regression metrics.",
+        "Documented algorithmic findings and presented results to senior engineering mentors."
+      ],
+      technologies: ["Python", "Scikit-Learn", "Data Preprocessing", "Feature Engineering", "Git"]
     }
   ],
 
@@ -162,19 +260,20 @@ export const portfolioData: PortfolioData = {
       category: "ai-ml",
       categoryLabel: "Multimodal AI & Forensics",
       featured: true,
-      tagline: "Multimodal Media-Forensics Platform for Manipulated-Media Detection",
-      description: "A comprehensive media-forensics application engineered to detect deepfakes and manipulated content across multimodal channels — image, video, and audio streams. Employs deep feature extraction, frequency-domain artifacts analysis, and spectral inconsistencies to flag synthetic media with confidence scoring.",
+      tagline: "Multimodal Media-Forensics Platform for Deepfake & Manipulated-Media Detection",
+      description: "Developed a comprehensive multimodal media forensics platform using Python and FastAPI to analyze manipulated images, videos, and audio. Implemented FFT frequency analysis, Grad-CAM attention visualizations, facial artifact analysis with MediaPipe, and audio signal feature extraction with detailed explainable reporting.",
       highlights: [
-        "Analyzes spatial pixel artifacts and frequency-domain DCT/FFT spectra for visual manipulation cues.",
-        "Processes multimodal inputs (visual frames, audio tracks, and temporal continuity).",
-        "Generates explainable forensics reports detailing suspicious regions and manipulation confidence."
+        "Multimodal forensics pipeline detecting visual, facial, and spectral inconsistencies.",
+        "FFT frequency-domain artifact analysis and Grad-CAM explainability heatmaps.",
+        "Audio signal feature extraction (spectral centroid, MFCCs, zero-crossing rate) for synthetic voice detection.",
+        "FastAPI backend with automated verification reporting."
       ],
-      technologies: ["Python", "PyTorch", "OpenCV", "Transformers", "Librosa", "FastAPI"],
+      technologies: ["Python", "FastAPI", "Computer Vision", "OpenCV", "MediaPipe", "Signal Processing", "PyTorch"],
       githubUrl: "https://github.com/Parepallinagavenkatasahithi/TrustLens.AI",
-      liveUrl: undefined, // Add your live demo link when deployed
+      liveUrl: undefined,
       image: {
         src: "/assets/images/projects/trustlens_ai.jpg",
-        alt: "TrustLens.AI Multimodal Media Forensics Application Interface",
+        alt: "TrustLens.AI Multimodal Deepfake Detection Interface",
         caption: "Deepfake and manipulated media detection across image, video, and audio streams.",
         aspectRatio: "wide"
       }
@@ -185,14 +284,15 @@ export const portfolioData: PortfolioData = {
       category: "ai-ml",
       categoryLabel: "Machine Learning & Economics",
       featured: true,
-      tagline: "Machine-Learning-Driven Dynamic Pricing Engine & Demand Forecaster",
-      description: "An intelligent pricing engine that computes revenue-optimal prices based on real-time market dynamics, competitor price monitoring, price elasticity of demand, and seasonal indicators. Utilizes gradient boosting and econometric regression to maximize margins while preserving sales volume.",
+      tagline: "Intelligent Dynamic Pricing Solution Driven by LightGBM & XGBoost",
+      description: "Developed a machine learning-based dynamic pricing solution using LightGBM and XGBoost to predict and optimize product prices based on real-time market demand analysis. Evaluated predictive models on historical pricing data to support data-driven pricing decisions, maximizing revenue while preserving conversion rates.",
       highlights: [
-        "Calculates price elasticity curves across varied product tiers and consumer demographics.",
-        "Simulates revenue vs. demand frontiers to recommend optimal real-time pricing adjustments.",
-        "Features an interactive analytics dashboard allowing scenario planning and margin stress-testing."
+        "LightGBM and XGBoost gradient-boosted decision engines for demand forecasting.",
+        "Price elasticity curve simulation to determine revenue-maximizing price points.",
+        "Evaluated predictive models on historical transaction datasets with robust cross-validation.",
+        "Interactive dashboard interface for scenario modeling and margin analysis."
       ],
-      technologies: ["Python", "Scikit-Learn", "XGBoost", "Pandas", "NumPy", "Streamlit"],
+      technologies: ["Python", "LightGBM", "XGBoost", "Machine Learning", "Scikit-learn", "Pandas", "Streamlit"],
       githubUrl: "https://github.com/Parepallinagavenkatasahithi/AI-PriceOptima",
       liveUrl: undefined,
       image: {
@@ -204,18 +304,19 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "hybrid-quantum-portfolio",
-      title: "Hybrid Quantum Portfolio Optimization",
+      title: "Hybrid Quantum Portfolio Optimizer",
       category: "quantum",
-      categoryLabel: "Quantum Computing & Algorithms",
+      categoryLabel: "Quantum Computing (QAOA)",
       featured: true,
-      tagline: "QAOA & VQE-Driven Hybrid Quantum-Classical Asset Allocation",
-      description: "A research-driven implementation solving the NP-hard Markowitz portfolio optimization problem using the Quantum Approximate Optimization Algorithm (QAOA) and classical co-optimization. Formulates the risk-return trade-off into an Ising Hamiltonian and evaluates variational quantum state evolution on simulated NISQ architectures.",
+      tagline: "QAOA-Driven Hybrid Quantum-Classical Portfolio Asset Allocation (AQVH916)",
+      description: "Led team 'Quantum Coders' in building a hybrid quantum-classical portfolio optimizer using QAOA (Quantum Approximate Optimization Algorithm) with a classical mean-variance (Markowitz) comparison. Qualified for the AQVH Grand Finale and secured first place in the semi-final round, earning an INR 10,000 prize and recognition from APSCHE, IBM, and TCS.",
       highlights: [
-        "Formulates quadratic unconstrained binary optimization (QUBO) matrices from historical covariance.",
-        "Applies QAOA parameterized ansatz circuits to sample optimal discrete asset weighting sets.",
-        "Benchmarks variational quantum solutions against classical Markowitz efficient frontiers."
+        "Formulated portfolio covariance and return constraints into a Quadratic Unconstrained Binary Optimization (QUBO) Hamiltonian.",
+        "Constructed parameterized QAOA quantum circuits in Qiskit and PennyLane with variational optimization.",
+        "Compared simulated quantum ansatz states against classical CVXPY quadratic solvers.",
+        "Engineered an interactive desktop / visualization GUI using PySide6."
       ],
-      technologies: ["Python", "Qiskit", "QAOA", "NumPy", "Matplotlib", "Classical Optimizers"],
+      technologies: ["Python", "Qiskit", "QAOA", "PennyLane", "CVXPY", "PySide6", "NumPy", "Matplotlib"],
       githubUrl: "https://github.com/Parepallinagavenkatasahithi/Hybrid-Quantum-Portfolio-Optimization",
       liveUrl: undefined,
       image: {
@@ -229,13 +330,47 @@ export const portfolioData: PortfolioData = {
 
   additionalProjects: [
     {
+      id: "ai-travel-planner",
+      title: "AI-Powered Travel Planner",
+      category: "generative-ai",
+      categoryLabel: "Generative AI & Cloud",
+      featured: false,
+      tagline: "Multi-API intelligent itinerary generation and live mapping",
+      description: "Built during Edunet Foundation internship using Python and Streamlit. Integrates OpenAI, OpenWeather, and OpenCage APIs for real-time personalized travel planning, weather forecasting, and location intelligence.",
+      highlights: ["OpenAI LLM prompt orchestration", "Live weather and geo-coordinate APIs", "Interactive Streamlit UI"],
+      technologies: ["Python", "Streamlit", "OpenAI API", "OpenWeather", "OpenCage"],
+      githubUrl: "https://github.com/Parepallinagavenkatasahithi",
+      image: {
+        src: "/assets/images/projects/travel_planner.jpg",
+        alt: "AI Travel Planner Interface",
+        aspectRatio: "landscape"
+      }
+    },
+    {
+      id: "ai-nlp-chatbot",
+      title: "Intelligent Customer Support Chatbot",
+      category: "ai-ml",
+      categoryLabel: "NLP & Conversational AI",
+      featured: false,
+      tagline: "High-accuracy intent recognition chatbot for automated query resolution",
+      description: "Developed during Infosys Springboard AI internship. Employs NLP preprocessing, TF-IDF / transformer embeddings, and intent classification achieving 90%+ query accuracy for automated support workflows.",
+      highlights: ["90%+ query intent accuracy", "Contextual fallback handling", "Low latency inference"],
+      technologies: ["Python", "NLP", "Scikit-Learn", "Flask", "NLTK"],
+      githubUrl: "https://github.com/Parepallinagavenkatasahithi",
+      image: {
+        src: "/assets/images/projects/ai_chatbot.jpg",
+        alt: "Intelligent Customer Support Chatbot",
+        aspectRatio: "landscape"
+      }
+    },
+    {
       id: "quantum-circuit-bench",
-      title: "Quantum Circuit Depth & Fidelity Benchmarker",
+      title: "Quantum Circuit Depth & Noise Analyzer",
       category: "quantum",
       categoryLabel: "Quantum Computing",
       featured: false,
       tagline: "NISQ noise model simulation and quantum gate depth analyzer",
-      description: "Tool evaluating quantum circuit fidelity across noisy quantum channels with depolarizing errors, thermal relaxation, and gate dephasing.",
+      description: "Evaluates quantum circuit fidelity across noisy quantum channels with depolarizing errors, thermal relaxation, and gate dephasing using Qiskit Aer simulator.",
       highlights: ["Gate count decomposition", "Noise model comparisons", "State tomography"],
       technologies: ["Qiskit", "Aer Simulator", "Python", "NumPy"],
       githubUrl: "https://github.com/Parepallinagavenkatasahithi",
@@ -246,87 +381,53 @@ export const portfolioData: PortfolioData = {
       }
     },
     {
-      id: "rag-knowledge-engine",
-      title: "DocuSense RAG Knowledge Base",
-      category: "generative-ai",
-      categoryLabel: "Generative AI",
-      featured: false,
-      tagline: "Domain-grounded retrieval-augmented generation engine",
-      description: "Enterprise PDF/technical document Q&A engine with dense vector semantic search, hybrid re-ranking, and hallucination reduction guards.",
-      highlights: ["Hybrid vector & keyword search", "Source citation tracking", "Low latency chunking"],
-      technologies: ["LangChain", "ChromaDB", "Python", "FastAPI", "React"],
-      githubUrl: "https://github.com/Parepallinagavenkatasahithi",
-      image: {
-        src: "/assets/images/projects/docusense_rag.jpg",
-        alt: "DocuSense RAG Knowledge Base Interface",
-        aspectRatio: "landscape"
-      }
-    },
-    {
-      id: "vision-anomaly-detector",
-      title: "Industrial Defect & Anomaly Detector",
-      category: "ai-ml",
-      categoryLabel: "Computer Vision",
-      featured: false,
-      tagline: "Unsupervised visual anomaly detection using convolutional autoencoders",
-      description: "Computer vision pipeline that detects structural micro-defects in manufactured components with high sensitivity and zero labelled anomaly requirements.",
-      highlights: ["Autoencoder reconstruction error", "Heatmap localization", "Real-time stream processing"],
-      technologies: ["PyTorch", "OpenCV", "FastAPI", "NumPy"],
-      githubUrl: "https://github.com/Parepallinagavenkatasahithi",
-      image: {
-        src: "/assets/images/projects/vision_anomaly.jpg",
-        alt: "Industrial anomaly detection heatmaps",
-        aspectRatio: "landscape"
-      }
-    },
-    {
-      id: "microservices-ecommerce-core",
-      title: "Distributed Order & Inventory Core",
+      id: "enterprise-java-core",
+      title: "ElevateIQ Java Core Services",
       category: "software",
       categoryLabel: "Software Engineering",
       featured: false,
-      tagline: "Resilient Java-based backend service architecture",
-      description: "Modular Java service handling concurrent transaction locking, inventory idempotency, and asynchronous event notifications.",
-      highlights: ["ACID transaction handling", "Optimistic locking pattern", "RESTful endpoints"],
-      technologies: ["Java", "Spring Boot", "PostgreSQL", "Docker", "Git"],
+      tagline: "Structured OOP Java backend modules and API handlers",
+      description: "Modular enterprise Java application routines engineered with clean architecture, robust exception handling, and relational DBMS persistence.",
+      highlights: ["Clean OOP architecture", "Robust exception handling", "REST API integration"],
+      technologies: ["Java", "OOP", "SQL", "REST APIs", "Git"],
       githubUrl: "https://github.com/Parepallinagavenkatasahithi",
       image: {
         src: "/assets/images/projects/java_backend.jpg",
-        alt: "Distributed service architecture diagram",
+        alt: "Enterprise Java Core architecture",
         aspectRatio: "landscape"
       }
     },
     {
-      id: "time-series-forecaster",
-      title: "Multi-Variate Time Series Forecaster",
+      id: "route-optimization-engine",
+      title: "Algorithmic Route & Fleet Optimizer",
       category: "data-science",
-      categoryLabel: "Data Science",
+      categoryLabel: "Optimization & Graph Algorithms",
       featured: false,
-      tagline: "Statistical and deep learning demand trend forecasting",
-      description: "Comparative study and implementation of ARIMA, Prophet, and Temporal Convolutional Networks on volatile real-world sensor data.",
-      highlights: ["Seasonal decomposition", "Error metric comparison (RMSE, MAPE)", "Interactive forecast plotting"],
-      technologies: ["Python", "Pandas", "Statsmodels", "Matplotlib", "Seaborn"],
+      tagline: "Vehicle routing and cost-minimization optimization engine",
+      description: "Applies graph algorithms, heuristic distance matrices, and constraint satisfaction to optimize delivery routing and travel times.",
+      highlights: ["Graph distance matrices", "Heuristic optimization", "Cost reduction simulations"],
+      technologies: ["Python", "NumPy", "Pandas", "Matplotlib"],
       githubUrl: "https://github.com/Parepallinagavenkatasahithi",
       image: {
-        src: "/assets/images/projects/timeseries_forecaster.jpg",
-        alt: "Time series forecasting graphs",
+        src: "/assets/images/projects/route_optimizer.jpg",
+        alt: "Route Optimization Engine",
         aspectRatio: "landscape"
       }
     },
     {
-      id: "code-doc-assistant",
-      title: "Contextual Code Intelligence Assistant",
+      id: "genai-gemini-suite",
+      title: "Gemini & Vertex AI Multimodal Assistant",
       category: "generative-ai",
       categoryLabel: "Generative AI",
       featured: false,
-      tagline: "Automated codebase summarizer and architecture documentation generator",
-      description: "Parses AST trees of software repositories and feeds structured context into LLMs to automatically generate comprehensive developer documentation.",
-      highlights: ["AST code structure parsing", "Automated markdown documentation", "Dependency mapping"],
-      technologies: ["TypeScript", "Python", "LangChain", "Node.js"],
+      tagline: "Exploration of Gemini 1.5 and Imagen on Vertex AI",
+      description: "Hands-on projects built with Google AI Studio and Vertex AI exploring multi-turn conversational agents, multimodal vision prompts, and Imagen image generation pipelines.",
+      highlights: ["Gemini API integration", "Multimodal prompt engineering", "Vertex AI deployment"],
+      technologies: ["Google AI Studio", "Vertex AI", "Gemini API", "Python"],
       githubUrl: "https://github.com/Parepallinagavenkatasahithi",
       image: {
-        src: "/assets/images/projects/code_doc_gen.jpg",
-        alt: "Code documentation assistant UI",
+        src: "/assets/images/projects/gemini_assistant.jpg",
+        alt: "Gemini and Vertex AI Suite",
         aspectRatio: "landscape"
       }
     }
@@ -335,108 +436,193 @@ export const portfolioData: PortfolioData = {
   achievements: [
     {
       id: "aqvh-challenge",
-      title: "AQVH Portfolio Optimization Challenge",
-      organization: "Autonomous Quantum & Variational Hackathon / Industry Consortium",
-      date: "Competition Finalist",
-      badge: "Finalist / Contender",
-      stage: "Grand Finale Stage",
-      description: "Spearheaded the algorithmic design and implementation of QAOA for real-world constrained portfolio allocation, advancing to the final competitive stages.",
+      title: "AQVH Quantum Computing Challenge — 1st Place & Grand Finalist",
+      organization: "Amaravati Quantum Valley Hackathon 2025 (APSCHE, IBM, TCS)",
+      date: "2025",
+      badge: "1st Place Semifinals • INR 10,000 Prize",
+      stage: "Grand Finale Finalist",
+      description: "Secured 1st place in the semifinals, qualified for the prestigious Grand Finale, and received an INR 10,000 cash prize. Led team Quantum Coders in engineering a QAOA-based portfolio optimization model (AQVH916) earning recognition from APSCHE, IBM, and TCS, along with regional media coverage.",
       impactPoints: [
-        "Formulated high-dimensional financial covariance matrices into compact QUBO representations.",
-        "Demonstrated parameterized quantum circuit optimization under simulated NISQ constraints.",
-        "Recognized by judges for clear mathematical formulation and computational rigor."
+        "Secured 1st Place in the semi-final round and advanced to Grand Finale.",
+        "Awarded INR 10,000 cash prize for quantum algorithmic innovation.",
+        "Built QAOA-based portfolio optimization model (AQVH916) balancing risk and return.",
+        "Recognized by APSCHE, IBM, and TCS with regional media press coverage."
       ],
       image: {
         src: "/assets/images/achievements/aqvh_challenge.jpg",
-        alt: "AQVH Portfolio Optimization Challenge Recognition",
-        caption: "AQVH Challenge presentation and technical demonstration."
+        alt: "AQVH Quantum Computing Challenge 1st Place Recognition",
+        caption: "AQVH Semifinals 1st Place & Grand Finale qualification."
       }
     },
     {
       id: "quantum-coders-lead",
       title: "Quantum Coders — Team Leadership",
-      organization: "National Technical & Quantum Innovation Hackathon",
-      date: "Team Leadership",
+      organization: "Amaravati Quantum Valley Hackathon & National Challenges",
+      date: "Team Lead",
       badge: "Team Lead",
-      stage: "Leadership & Execution",
-      description: "Served as the team lead for 'Quantum Coders', guiding architecture, task distribution, and quantum algorithm prototyping under tight hackathon sprint timelines.",
+      stage: "Leadership & Algorithmic Design",
+      description: "Served as Team Lead for 'Quantum Coders', directing algorithmic strategy, task distribution, mathematical formulation of Hamiltonians, and Qiskit circuit simulation under intensive competitive deadlines.",
       impactPoints: [
-        "Orchestrated cross-functional collaboration across algorithmic research, coding, and presentation.",
-        "Ensured rigorous version control, modular code architecture, and high test coverage.",
-        "Delivered end-to-end working proof of concept within 36 hours."
+        "Led cross-functional team in mathematical modeling of financial covariance matrices into QUBO form.",
+        "Spearheaded QAOA circuit execution and hybrid classical comparison routines.",
+        "Delivered winning presentation and live defense to senior jury."
       ],
       image: {
         src: "/assets/images/achievements/quantum_coders.jpg",
-        alt: "Quantum Coders Team Collaboration",
+        alt: "Quantum Coders Team Leadership",
         caption: "Leading Quantum Coders team through intensive hackathon build."
       }
     },
     {
-      id: "grand-finale-qualifier",
-      title: "Grand Finale Qualification & Competition Recognition",
-      organization: "Premier Collegiate & National Engineering Competitions",
-      date: "Competitive Recognition",
-      badge: "Grand Finalist",
-      stage: "National Stage",
-      description: "Qualified for the Grand Finale of premier collegiate technology hackathons after competitive screening rounds, demonstrating robust engineering problem-solving.",
+      id: "wiser-2025",
+      title: "WISER Quantum Computing Program Selection (2025)",
+      organization: "WISER (BQPhy®) Global Quantum Computing Initiative",
+      date: "2025",
+      badge: "Top 3,000 of 65,000+ Applicants",
+      stage: "Highly Selective Global Cohort",
+      description: "Selected among the top 3,000 out of 65,000+ applicants worldwide for the prestigious WISER (BQPhy®) Quantum Computing Program.",
       impactPoints: [
-        "Pitched working prototypes to senior technical judges and industry domain experts.",
-        "Selected among top contender teams out of extensive multi-round applicant pools.",
-        "Exemplified technical precision in live demonstration and Q&A sessions."
-      ],
-      image: {
-        src: "/assets/images/achievements/grand_finale.jpg",
-        alt: "Grand Finale Hackathon Presentation and Stage",
-        caption: "Live demonstration and competition defense during the Grand Finale."
-      }
-    },
-    {
-      id: "wiser-2026",
-      title: "WISER 2026 Program Participation",
-      organization: "Women in STEM, Engineering & Research Initiative",
-      date: "Selected Cohort",
-      badge: "Selected Participant",
-      stage: "Mentorship & Research Cohort",
-      description: "Selected to participate in the prestigious WISER 2026 program, engaging with research leaders, technical mentors, and fellow emerging engineers.",
-      impactPoints: [
-        "Engaged in advanced technical seminars spanning AI ethics, scalable computing, and research methodologies.",
-        "Participated in peer technical exchange circles focusing on modern software engineering practices.",
-        "Strengthened mentorship ties with seasoned industry and academic engineering leaders."
+        "Rigorous global selection process with <4.6% acceptance rate.",
+        "Intensive training in quantum mechanics, quantum algorithms, and computational physics.",
+        "Hands-on quantum simulation projects and peer exchange circles."
       ],
       image: {
         src: "/assets/images/achievements/wiser_2026.jpg",
-        alt: "WISER 2026 Program Cohort & Sessions",
-        caption: "WISER 2026 technical mentorship sessions and collaborative discussions."
+        alt: "WISER Quantum Computing Program Selection",
+        caption: "Selected among top 3,000 of 65,000+ applicants globally."
       }
     },
     {
-      id: "technical-accolades",
-      title: "Institutional Technical & Academic Honors",
-      organization: "Department of Computer Science & Engineering",
-      date: "Ongoing Recognition",
-      badge: "Academic Excellence",
-      stage: "Institutional Honors",
-      description: "Maintained a high cumulative GPA of 8.9/10 while actively participating in department technical symposia, coding leagues, and peer knowledge-sharing sessions.",
+      id: "wiser-summer-2026",
+      title: "WISER Summer Program 2026 — Fully Funded ($1,000)",
+      organization: "WISER Global Initiative (Participants from 68 Countries)",
+      date: "2026",
+      badge: "Fully Funded $1,000 Program",
+      stage: "International Research Cohort",
+      description: "Selected for the prestigious, fully funded $1,000 WISER Summer Program 2026, collaborating with aspiring quantum scientists and engineers across 68 nations.",
       impactPoints: [
-        "Consistent academic excellence across core CS subjects: Data Structures, Algorithms, OS, DBMS.",
-        "Active mentor for junior student developers in algorithmic problem-solving and Java paradigms.",
-        "Organized departmental technical workshops introducing peers to modern Git and AI tooling."
+        "Awarded full $1,000 scholarship funding for summer research.",
+        "Global cohort representing 68 countries worldwide.",
+        "Advanced exploration of quantum information systems and scalable computing."
+      ],
+      image: {
+        src: "/assets/images/achievements/wiser_summer.jpg",
+        alt: "WISER Summer Program 2026",
+        caption: "Fully funded $1,000 program with participants from 68 countries."
+      }
+    },
+    {
+      id: "qc2-quantum-award",
+      title: "Quantum Innovation Excellence Award (2026)",
+      organization: "QC² — SRM University AP & GeeksforGeeks Student Chapter",
+      date: "2026",
+      badge: "Best Innovation Excellence Award",
+      stage: "36-Hour National Quantum Hackathon",
+      description: "Awarded at QC², a premier 36-hour national-level Quantum Computing Hackathon hosted at SRM University AP in collaboration with the GeeksforGeeks Student Chapter, for pioneering innovation in quantum solutions.",
+      impactPoints: [
+        "36-hour continuous national quantum hackathon marathon.",
+        "Awarded 'Best Innovation Excellence' for novel quantum problem formulation.",
+        "Evaluated and commended by leading academic and industry quantum researchers."
+      ],
+      image: {
+        src: "/assets/images/achievements/grand_finale.jpg",
+        alt: "Quantum Innovation Excellence Award at QC² SRM AP",
+        caption: "36-hour national hackathon innovation award at SRM University AP."
+      }
+    },
+    {
+      id: "academic-distinction",
+      title: "Academic Excellence — 8.9 CGPA & Department Honors",
+      organization: "PSCMR College of Engineering and Technology (PSCMRCET)",
+      date: "Ongoing",
+      badge: "CGPA: 8.9 / 10.0",
+      stage: "Institutional Honors",
+      description: "Maintaining a stellar cumulative GPA of 8.9/10 while actively driving technical hackathons, peer workshops, and research initiatives.",
+      impactPoints: [
+        "Consistent top-tier academic standing across core CS curriculum.",
+        "Mentoring peers in Java, data structures, and algorithmic optimization.",
+        "Schooling foundations: 91% in Intermediate (MPC) and 98% in Class X."
       ],
       image: {
         src: "/assets/images/achievements/academic_honors.jpg",
-        alt: "Technical and Academic Recognitions",
-        caption: "Academic distinction and department technical community participation."
+        alt: "Academic Distinction and Department Honors",
+        caption: "Academic distinction with 8.9 CGPA at PSCMRCET."
       }
     }
   ],
 
   certifications: [
     {
-      id: "java-se-dev",
-      title: "Java SE Programming & Object-Oriented Design",
-      issuer: "ElevateIQ / Recognized Developer Certification",
+      id: "cert-quantum-algo",
+      title: "Quantum Algorithm Fundamentals and Hands-on Training",
+      issuer: "Quantum Computing Foundations / Qiskit Community",
+      issueDate: "Verified Credential",
+      credentialId: "Q-ALGO-FUNDAMENTALS",
+      credentialUrl: "https://github.com/Parepallinagavenkatasahithi",
+      skills: ["Quantum Algorithms", "Qiskit", "Quantum Circuits", "Variational Solvers"],
+      image: {
+        src: "/assets/images/certificates/quantum_cert.jpg",
+        alt: "Quantum Algorithm Fundamentals Certificate"
+      }
+    },
+    {
+      id: "cert-wiser-quantum",
+      title: "Quantum Fundamentals from WISER",
+      issuer: "WISER (BQPhy®)",
       issueDate: "Verified Program",
-      credentialId: "JSE-DEV-VERIFIED",
+      credentialId: "WISER-Q-FUNDAMENTALS",
+      credentialUrl: "https://github.com/Parepallinagavenkatasahithi",
+      skills: ["Quantum Physics", "Quantum Computation", "Linear Algebra", "Qubit Systems"],
+      image: {
+        src: "/assets/images/certificates/wiser_cert.jpg",
+        alt: "WISER Quantum Fundamentals Certificate"
+      }
+    },
+    {
+      id: "cert-gemini-vertex",
+      title: "Explore Generative AI with the Gemini API in Vertex AI",
+      issuer: "Google Cloud / Vertex AI",
+      issueDate: "Google Cloud Credential",
+      credentialId: "GCLOUD-GEMINI-VERTEX",
+      credentialUrl: "https://github.com/Parepallinagavenkatasahithi",
+      skills: ["Gemini API", "Vertex AI", "Prompt Engineering", "Multimodal LLMs"],
+      image: {
+        src: "/assets/images/certificates/google_cert.jpg",
+        alt: "Google Cloud Vertex AI Gemini Certificate"
+      }
+    },
+    {
+      id: "cert-gemini-imagen",
+      title: "Build Real World AI Applications with Gemini and Imagen",
+      issuer: "Google / Google AI Studio",
+      issueDate: "Google AI Credential",
+      credentialId: "GOOGLE-IMAGEN-GEMINI",
+      credentialUrl: "https://github.com/Parepallinagavenkatasahithi",
+      skills: ["Gemini 1.5", "Imagen", "Google AI Studio", "Generative Vision"],
+      image: {
+        src: "/assets/images/certificates/imagen_cert.jpg",
+        alt: "Gemini and Imagen Real World AI Applications Certificate"
+      }
+    },
+    {
+      id: "cert-aws-apac",
+      title: "AWS APAC - Solutions Architecture Job Simulation",
+      issuer: "Amazon Web Services (AWS) / Forage",
+      issueDate: "AWS Credential",
+      credentialId: "AWS-APAC-ARCH-SIM",
+      credentialUrl: "https://github.com/Parepallinagavenkatasahithi",
+      skills: ["Cloud Architecture", "AWS Well-Architected", "Scalability", "System Security"],
+      image: {
+        src: "/assets/images/certificates/aws_cert.jpg",
+        alt: "AWS APAC Solutions Architecture Certificate"
+      }
+    },
+    {
+      id: "cert-java-se",
+      title: "Java SE Programming & Object-Oriented Architecture",
+      issuer: "ElevateIQ Soft Tech",
+      issueDate: "Professional Credential",
+      credentialId: "ELEVATEIQ-JAVA-DEV",
       credentialUrl: "https://github.com/Parepallinagavenkatasahithi",
       skills: ["Core Java", "OOP Architecture", "Data Structures", "Multi-threading", "Exception Handling"],
       image: {
@@ -445,42 +631,16 @@ export const portfolioData: PortfolioData = {
       }
     },
     {
-      id: "ml-specialization",
-      title: "Machine Learning & Statistical Learning Pipelines",
-      issuer: "Premier Online Technical Specialization",
-      issueDate: "Verified Credential",
-      credentialId: "ML-SPEC-VERIFIED",
+      id: "cert-ml-spec",
+      title: "Machine Learning & Statistical Pipelines Specialization",
+      issuer: "Machine Learning Foundations / GDSC",
+      issueDate: "Verified Specialization",
+      credentialId: "ML-PIPELINES-VERIFIED",
       credentialUrl: "https://github.com/Parepallinagavenkatasahithi",
-      skills: ["Supervised Learning", "Regression & Classification", "Neural Networks", "Gradient Boosting"],
+      skills: ["Supervised Learning", "Gradient Boosting", "Deep Learning", "Evaluation Metrics"],
       image: {
         src: "/assets/images/certificates/ml_cert.jpg",
         alt: "Machine Learning Specialization Certificate"
-      }
-    },
-    {
-      id: "quantum-fundamentals",
-      title: "Quantum Computation & Variational Algorithms (Qiskit)",
-      issuer: "Quantum Computing Foundations",
-      issueDate: "Verified Credential",
-      credentialId: "QISKIT-ALGO-VERIFIED",
-      credentialUrl: "https://github.com/Parepallinagavenkatasahithi",
-      skills: ["Qiskit", "Quantum Circuits", "QAOA", "Bloch Sphere", "VQE"],
-      image: {
-        src: "/assets/images/certificates/quantum_cert.jpg",
-        alt: "Quantum Computing Certificate"
-      }
-    },
-    {
-      id: "fullstack-systems",
-      title: "Full-Stack Software Development & REST Architectures",
-      issuer: "Software Engineering Professional Pathway",
-      issueDate: "Verified Credential",
-      credentialId: "SWE-ARCH-VERIFIED",
-      credentialUrl: "https://github.com/Parepallinagavenkatasahithi",
-      skills: ["REST APIs", "Modern Web Frameworks", "Git Workflows", "System Design"],
-      image: {
-        src: "/assets/images/certificates/swe_cert.jpg",
-        alt: "Software Engineering Certificate"
       }
     }
   ],
@@ -488,10 +648,10 @@ export const portfolioData: PortfolioData = {
   gallery: [
     {
       id: "hackathon-stage",
-      title: "Grand Finale Live Presentation",
+      title: "Grand Finale Live Presentation & Defense",
       category: "Hackathon",
-      date: "Competition Defense",
-      caption: "Presenting algorithmic architecture and live demo before hackathon jury.",
+      date: "Competition Stage",
+      caption: "Presenting algorithmic architecture and QAOA live demo before the hackathon jury.",
       aspectRatio: "landscape",
       image: {
         src: "/assets/images/gallery/gallery_hackathon_stage.jpg",
@@ -501,10 +661,10 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "team-brainstorm",
-      title: "Quantum Coders Sprint",
+      title: "Quantum Coders Sprint Session",
       category: "Team",
-      date: "Sprint Session",
-      caption: "Intense whiteboard sprint mapping QUBO matrix reduction during competition.",
+      date: "Hackathon Sprint",
+      caption: "Intense whiteboard sprint mapping QUBO matrix reduction during the competition.",
       aspectRatio: "portrait",
       image: {
         src: "/assets/images/gallery/gallery_team_sprint.jpg",
@@ -514,10 +674,10 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "project-demo",
-      title: "TrustLens.AI Live System Demo",
+      title: "TrustLens.AI Live Forensics Exhibition",
       category: "Demonstration",
       date: "Technical Demo",
-      caption: "Showcasing real-time manipulated media detection to faculty and peers.",
+      caption: "Showcasing real-time manipulated media detection and FFT spectral analysis.",
       aspectRatio: "square",
       image: {
         src: "/assets/images/gallery/gallery_project_demo.jpg",
@@ -527,10 +687,10 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "workshop-lab",
-      title: "Advanced AI Hands-On Workshop",
+      title: "AI Hands-On Technical Deep-Dive",
       category: "Workshop",
       date: "Technical Deep-Dive",
-      caption: "Hands-on session analyzing deep feature representations and transformer attention maps.",
+      caption: "Hands-on session exploring deep feature representations and gradient attribution maps.",
       aspectRatio: "landscape",
       image: {
         src: "/assets/images/gallery/gallery_workshop.jpg",
@@ -540,27 +700,27 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "wiser-session",
-      title: "WISER 2026 Cohort Exchange",
+      title: "WISER Quantum Cohort Gathering",
       category: "Technical Event",
-      date: "Mentorship Gathering",
-      caption: "Collaborating with researchers and engineers in the WISER 2026 initiative.",
+      date: "Research Exchange",
+      caption: "Collaborating with researchers and international peers in the WISER initiative.",
       aspectRatio: "portrait",
       image: {
         src: "/assets/images/gallery/gallery_wiser_event.jpg",
-        alt: "WISER 2026 Cohort Gathering",
+        alt: "WISER Quantum Cohort Gathering",
         objectPosition: "center"
       }
     },
     {
       id: "awards-podium",
-      title: "Challenge Recognition Ceremony",
+      title: "AQVH Semifinals Award Ceremony",
       category: "Technical Event",
       date: "Award Ceremony",
-      caption: "Celebrating finalist qualification and team recognition with peers.",
+      caption: "Celebrating 1st place semifinal victory and Grand Finale qualification.",
       aspectRatio: "square",
       image: {
         src: "/assets/images/gallery/gallery_award_stage.jpg",
-        alt: "Challenge Recognition Ceremony",
+        alt: "AQVH Semifinals Award Stage",
         objectPosition: "center"
       }
     }

@@ -2,7 +2,7 @@ export interface ImageConfig {
   src: string;
   alt: string;
   caption?: string;
-  objectPosition?: string; // CSS object-position e.g. 'center', 'top 20%', etc.
+  objectPosition?: string;
   aspectRatio?: 'square' | 'portrait' | 'landscape' | 'wide' | string;
 }
 
@@ -12,21 +12,40 @@ export interface StatItem {
   description?: string;
 }
 
+export interface SchoolingItem {
+  institution: string;
+  qualification: string;
+  score: string;
+  location: string;
+}
+
+export interface CompanyLogo {
+  name: string;
+  role: string;
+  period: string;
+}
+
 export interface PersonalDetails {
   name: string;
   displayName: string;
+  shortName: string;
   tagline: string;
+  quote: string;
   headline: string;
+  heroGreeting: string;
   conciseBio: string;
   fullBio: string[];
   problemSolvingPhilosophy: string;
   education: {
+    college: string;
+    university: string;
     degree: string;
-    specialization: string;
-    status: string; // "Currently Pursuing" - NEVER "Graduate"
+    status: string; // "Currently Pursuing B.Tech"
     cgpa: string;
+    location: string;
     highlight: string;
   };
+  schooling: SchoolingItem[];
   highlightClaim: {
     count: string;
     label: string;
@@ -34,6 +53,11 @@ export interface PersonalDetails {
   };
   profileImage: ImageConfig;
   resumePath: string;
+  contact: {
+    phone: string;
+    email: string;
+    location: string;
+  };
   social: {
     github: string;
     linkedin: string;
@@ -118,6 +142,7 @@ export interface GalleryItem {
 
 export interface PortfolioData {
   personal: PersonalDetails;
+  companiesWorkedWith: CompanyLogo[];
   expertise: ExpertiseItem[];
   experience: ExperienceItem[];
   featuredProjects: ProjectItem[];

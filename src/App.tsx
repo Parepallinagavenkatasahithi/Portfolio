@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar } from './components/layout/Navbar';
 import { HeroSection } from './components/sections/HeroSection';
+import { CompaniesStrip } from './components/sections/CompaniesStrip';
 import { AboutSection } from './components/sections/AboutSection';
 import { ExpertiseSection } from './components/sections/ExpertiseSection';
 import { ExperienceSection } from './components/sections/ExperienceSection';
@@ -20,6 +21,7 @@ export const App: React.FC = () => {
       {/* Main Content Sections */}
       <main className="flex-1">
         <HeroSection />
+        <CompaniesStrip />
         <AboutSection />
         <ExpertiseSection />
         <ExperienceSection />

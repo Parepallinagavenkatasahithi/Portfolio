@@ -16,14 +16,14 @@ export const AchievementsSection: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-8 border-b border-ivory-300">
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-earth-600 font-semibold block mb-2">
-              05 // Honors & Leadership
+              05 // HONORS, AWARDS & HACKATHON TITLES
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-ink-900 tracking-tight">
-              Achievements
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-display font-black text-ink-900 tracking-tight">
+              Achievements & Honors
             </h2>
           </div>
           <div className="text-sm font-mono text-ink-500 max-w-sm">
-            Recognitions, national hackathon finalist selections, and research cohorts.
+            National hackathon semifinal victories, international research selections, and innovation accolades.
           </div>
         </div>
 
@@ -32,11 +32,14 @@ export const AchievementsSection: React.FC = () => {
           {achievements.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-ivory-300 shadow-sm hover:shadow-md transition-all group"
+              className="flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-white border border-ivory-300 shadow-sm hover:shadow-md transition-all group hover:-translate-y-1"
             >
               <div>
                 {/* Visual Thumbnail */}
-                <div className="mb-5 rounded-xl overflow-hidden border border-ivory-200 cursor-pointer" onClick={() => setSelectedAchievement(item)}>
+                <div
+                  className="mb-5 rounded-xl overflow-hidden border border-ivory-200 cursor-pointer"
+                  onClick={() => setSelectedAchievement(item)}
+                >
                   <ImageWithFallback
                     image={item.image}
                     title={item.title}
@@ -47,8 +50,8 @@ export const AchievementsSection: React.FC = () => {
 
                 {/* Badge & Stage */}
                 <div className="flex items-center justify-between gap-2 mb-3">
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-earth-100 text-earth-800 text-[11px] font-mono font-semibold">
-                    <Trophy className="w-3 h-3 text-earth-600" />
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-earth-100 text-earth-800 text-[11px] font-mono font-bold">
+                    <Trophy className="w-3.5 h-3.5 text-earth-600" />
                     {item.badge}
                   </span>
                   <span className="text-[11px] font-mono text-ink-400">
@@ -62,7 +65,7 @@ export const AchievementsSection: React.FC = () => {
                 </h3>
 
                 {/* Organization */}
-                <p className="text-xs font-mono text-earth-700 font-medium mb-3">
+                <p className="text-xs font-mono text-earth-700 font-semibold mb-3">
                   {item.organization}
                 </p>
 
@@ -85,7 +88,7 @@ export const AchievementsSection: React.FC = () => {
               {/* View Details trigger */}
               <button
                 onClick={() => setSelectedAchievement(item)}
-                className="w-full pt-3 border-t border-ivory-200 flex items-center justify-between text-xs font-mono text-ink-600 hover:text-earth-600 transition-colors group-hover:translate-x-0.5"
+                className="w-full pt-3 border-t border-ivory-200 flex items-center justify-between text-xs font-mono text-ink-600 hover:text-earth-600 transition-colors"
               >
                 <span>View Recognition Artifact</span>
                 <ChevronRight className="w-4 h-4 text-earth-500" />
