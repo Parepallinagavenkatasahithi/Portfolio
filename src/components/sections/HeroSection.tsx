@@ -13,15 +13,15 @@ export const HeroSection: React.FC = () => {
       <div className="absolute bottom-10 left-10 w-[400px] h-[400px] bg-ivory-300/40 rounded-full blur-2xl pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full relative">
-        {/* GIANT EDITORIAL NAME BACKGROUND (Direct inspiration from reference) */}
-        <div className="relative w-full flex items-center justify-center py-4 md:py-8 select-none pointer-events-none">
-          <h1 className="text-[18vw] font-display font-black text-ink-900 tracking-tighter leading-[0.8] text-center w-full uppercase opacity-[0.95]">
+        {/* GIANT EDITORIAL NAME BACKGROUND (Slightly decreased size for balanced visual harmony) */}
+        <div className="relative w-full flex items-center justify-center py-4 md:py-6 select-none pointer-events-none">
+          <h1 className="text-[14.5vw] font-display font-black text-ink-900 tracking-tighter leading-[0.8] text-center w-full uppercase opacity-[0.95]">
             {personal.displayName}
           </h1>
         </div>
 
         {/* THREE-COLUMN HERO COMPOSITION OVERLAPPING THE GIANT TEXT */}
-        <div className="relative z-10 -mt-16 sm:-mt-24 md:-mt-36 lg:-mt-44 grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div className="relative z-10 -mt-12 sm:-mt-20 md:-mt-28 lg:-mt-36 grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-10 items-center">
           
           {/* Left Column: 30+ Real World Projects highlight */}
           <div className="md:col-span-4 lg:col-span-3 flex flex-col justify-center order-2 md:order-1 text-left">
@@ -40,7 +40,7 @@ export const HeroSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Center Column: Iconic Tilted Portrait Card */}
+          {/* Center Column: Iconic Tilted Portrait Card (Clean frame without footer bar) */}
           <div className="md:col-span-4 lg:col-span-6 flex justify-center order-1 md:order-2">
             <div className="relative w-64 sm:w-72 md:w-80 lg:w-96 transform -rotate-2 hover:rotate-0 transition-transform duration-500 ease-out">
               {/* Card Container */}
@@ -54,15 +54,6 @@ export const HeroSection: React.FC = () => {
                     className="w-full"
                     priority={true}
                   />
-                </div>
-
-                {/* Subtitle / Verification Tag */}
-                <div className="mt-2.5 px-2 py-1 flex items-center justify-between text-[11px] font-mono text-ink-600 border-t border-ivory-200">
-                  <span className="flex items-center gap-1.5 text-earth-600 font-semibold">
-                    <span className="w-2 h-2 rounded-full bg-earth-500" />
-                    Verified Portfolio
-                  </span>
-                  <span className="font-medium">Sahithi Parepalli</span>
                 </div>
               </div>
             </div>

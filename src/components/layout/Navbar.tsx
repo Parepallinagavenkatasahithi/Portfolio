@@ -33,15 +33,14 @@ export const Navbar: React.FC = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        {/* Brand: "Sahithi" in bold display font */}
+        {/* Brand: "Sahithi" in bold display font without trailing dot */}
         <a
           href="#"
-          className="group flex items-center gap-1 text-ink-900 transition-opacity hover:opacity-80"
+          className="group flex items-center text-ink-900 transition-opacity hover:opacity-80"
         >
           <span className="font-display font-black text-2xl tracking-tight text-ink-900">
             {portfolioData.personal.shortName}
           </span>
-          <span className="w-1.5 h-1.5 rounded-full bg-earth-500 mb-1 group-hover:scale-125 transition-transform" />
         </a>
 
         {/* Center / Right Quote + Navigation */}
