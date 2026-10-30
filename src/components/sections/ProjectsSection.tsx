@@ -1,58 +1,39 @@
 import React, { useState } from 'react';
 import { portfolioData } from '../../data/portfolio';
-import { ProjectCategory, ProjectItem } from '../../types/portfolio';
+import { ProjectItem } from '../../types/portfolio';
 import { ImageWithFallback } from '../common/ImageWithFallback';
 import { LightboxModal } from '../common/LightboxModal';
-import { Github, ExternalLink, ArrowUpRight, Filter, Layers, Check } from 'lucide-react';
-
-const categories: { label: string; value: ProjectCategory }[] = [
-  { label: 'All Projects', value: 'all' },
-  { label: 'AI & Machine Learning', value: 'ai-ml' },
-  { label: 'Generative AI', value: 'generative-ai' },
-  { label: 'Quantum Computing', value: 'quantum' },
-  { label: 'Software Systems', value: 'software' },
-  { label: 'Data Science', value: 'data-science' },
-];
+import { Github, ExternalLink, Check } from 'lucide-react';
 
 export const ProjectsSection: React.FC = () => {
-  const { featuredProjects, additionalProjects, personal } = portfolioData;
-  const [selectedCategory, setSelectedCategory] = useState<ProjectCategory>('all');
+  const { featuredProjects, personal } = portfolioData;
   const [selectedModalProject, setSelectedModalProject] = useState<ProjectItem | null>(null);
-  const [showAllAdditional, setShowAllAdditional] = useState(false);
-
-  // Filter additional projects based on category
-  const filteredAdditional = additionalProjects.filter((p) => {
-    if (selectedCategory === 'all') return true;
-    return p.category === selectedCategory;
-  });
-
-  const displayedAdditional = showAllAdditional ? filteredAdditional : filteredAdditional.slice(0, 4);
 
   return (
-    <section id="projects" className="py-24 md:py-32 border-b border-ivory-300/80">
+    <section id="projects" className="py-24 md:py-32 border-b border-ivory-300/80 bg-ivory-100">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-8 border-b border-ivory-300">
           <div>
             <div className="flex items-center gap-2 mb-2">
               <span className="text-xs font-mono uppercase tracking-widest text-earth-600 font-semibold">
-                04 // Curated Work
+                04 // CURATED WORK
               </span>
               <span className="text-xs font-mono px-2 py-0.5 rounded bg-earth-100 text-earth-800 font-semibold">
                 {personal.highlightClaim.count} Builds
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-ink-900 tracking-tight">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-display font-black text-ink-900 tracking-tight">
               Featured Projects
             </h2>
           </div>
           <div className="text-sm font-mono text-ink-500 max-w-md">
-            Architected and implemented with emphasis on algorithmic precision, multimodal pipelines, and quantum variational solvers.
+            Architected and implemented with emphasis on algorithmic precision, multimodal forensics, and quantum variational solvers.
           </div>
         </div>
 
-        {/* 1. FEATURED PROJECTS: LARGE EDITORIAL SHOWCASE */}
-        <div className="space-y-20 mb-24">
+        {/* FEATURED PROJECTS: LARGE EDITORIAL SHOWCASE */}
+        <div className="space-y-16">
           {featuredProjects.map((project, index) => {
             const isReversed = index % 2 === 1;
 
@@ -85,7 +66,7 @@ export const ProjectsSection: React.FC = () => {
                       Featured Build 0{index + 1}
                     </span>
                     <span className="text-ivory-400">•</span>
-                    <span className="text-xs font-mono text-ink-500">
+                    <span className="text-xs font-mono text-ink-500 font-medium">
                       {project.categoryLabel}
                     </span>
                   </div>
@@ -152,108 +133,6 @@ export const ProjectsSection: React.FC = () => {
               </div>
             );
           })}
-        </div>
-
-        {/* 2. ADDITIONAL TECHNICAL BUILDS CATALOG (Supporting 30+ Claim) */}
-        <div className="pt-16 border-t border-ivory-300">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
-            <div>
-              <div className="flex items-center gap-2 mb-1">
-                <Layers className="w-4 h-4 text-earth-600" />
-                <h3 className="text-xl sm:text-2xl font-display font-extrabold text-ink-900">
-                  Technical Project Archive
-                </h3>
-              </div>
-              <p className="text-xs sm:text-sm font-mono text-ink-500">
-                Additional implementations spanning AI, Quantum, Systems, and Data Science.
-              </p>
-            </div>
-
-            {/* Filter Pills */}
-            <div className="flex flex-wrap items-center gap-1.5">
-              <span className="text-xs font-mono text-ink-400 mr-2 flex items-center gap-1">
-                <Filter className="w-3 h-3" /> Filter:
-              </span>
-              {categories.map((cat) => (
-                <button
-                  key={cat.value}
-                  onClick={() => setSelectedCategory(cat.value)}
-                  className={`px-3 py-1 text-xs font-mono rounded-full transition-all ${
-                    selectedCategory === cat.value
-                      ? 'bg-earth-500 text-white font-semibold shadow-xs'
-                      : 'bg-white border border-ivory-300 text-ink-600 hover:border-ink-900'
-                  }`}
-                >
-                  {cat.label}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Grid of Archive Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-            {displayedAdditional.map((project) => (
-              <div
-                key={project.id}
-                className="p-6 rounded-xl bg-white border border-ivory-300 shadow-2xs hover:shadow-sm transition-all flex flex-col justify-between group"
-              >
-                <div>
-                  <div className="flex items-center justify-between gap-2 mb-3">
-                    <span className="text-[11px] font-mono uppercase text-earth-600 font-semibold">
-                      {project.categoryLabel}
-                    </span>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-1.5 rounded text-ink-400 hover:text-earth-600 hover:bg-ivory-100 transition-colors"
-                      title="View GitHub Repository"
-                    >
-                      <Github className="w-4 h-4" />
-                    </a>
-                  </div>
-
-                  <h4 className="text-lg font-bold text-ink-900 tracking-tight group-hover:text-earth-600 transition-colors mb-2">
-                    {project.title}
-                  </h4>
-
-                  <p className="text-xs font-mono text-ink-500 mb-3">
-                    {project.tagline}
-                  </p>
-
-                  <p className="text-xs text-ink-600 leading-relaxed mb-4">
-                    {project.description}
-                  </p>
-                </div>
-
-                <div>
-                  <div className="flex flex-wrap gap-1.5 pt-3 border-t border-ivory-200">
-                    {project.technologies.map((tech, tIdx) => (
-                      <span
-                        key={tIdx}
-                        className="px-2 py-0.5 text-[11px] font-mono rounded bg-ivory-100 text-ink-700"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Toggle View More */}
-          {filteredAdditional.length > 4 && (
-            <div className="flex justify-center">
-              <button
-                onClick={() => setShowAllAdditional(!showAllAdditional)}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-ivory-300 hover:border-ink-900 bg-white text-ink-800 text-xs font-mono font-semibold transition-all shadow-xs"
-              >
-                <span>{showAllAdditional ? 'Show Fewer Projects' : `View All ${filteredAdditional.length} Projects`}</span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-earth-600" />
-              </button>
-            </div>
-          )}
         </div>
       </div>
 

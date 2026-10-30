@@ -8,7 +8,7 @@ export const AboutSection: React.FC = () => {
   return (
     <section id="about" className="py-24 md:py-32 border-b border-ivory-300/80 bg-ivory-50/60">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        {/* Editorial Two-Column Split (Directly inspired by reference screenshot) */}
+        {/* Editorial Two-Column Split */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mb-20">
           
           {/* Left Column: "About Me" & Academic Snapshot */}
@@ -21,7 +21,7 @@ export const AboutSection: React.FC = () => {
                 About Me
               </h2>
               <p className="text-xs font-mono text-ink-500 leading-relaxed">
-                Aspiring software engineer exploring the frontiers of intelligent applications, QAOA quantum circuits, and reliable software systems.
+                Aspiring software engineer exploring intelligent applications, QAOA quantum circuits, and reliable software systems.
               </p>
             </div>
 
@@ -78,10 +78,10 @@ export const AboutSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: Editorial Narrative & Philosophy */}
+          {/* Right Column: Editorial Narrative & Philosophy (Concise & Recruiter-Friendly) */}
           <div className="lg:col-span-8 space-y-6 text-base sm:text-lg text-ink-800 leading-relaxed">
             {personal.fullBio.map((paragraph, index) => (
-              <p key={index} className="font-normal">
+              <p key={index} className="font-normal leading-relaxed">
                 {paragraph}
               </p>
             ))}
@@ -96,22 +96,6 @@ export const AboutSection: React.FC = () => {
               <p className="text-xl sm:text-2xl font-editorial italic text-ink-900 leading-snug">
                 "{personal.problemSolvingPhilosophy}"
               </p>
-            </div>
-
-            {/* Technical Pillars Pills */}
-            <div className="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono">
-              <div className="p-3 rounded-xl bg-ivory-200/70 border border-ivory-300 text-center font-semibold text-ink-800">
-                AI & Deep Learning
-              </div>
-              <div className="p-3 rounded-xl bg-ivory-200/70 border border-ivory-300 text-center font-semibold text-ink-800">
-                Quantum Algorithms (QAOA)
-              </div>
-              <div className="p-3 rounded-xl bg-ivory-200/70 border border-ivory-300 text-center font-semibold text-ink-800">
-                Enterprise Java & OOP
-              </div>
-              <div className="p-3 rounded-xl bg-ivory-200/70 border border-ivory-300 text-center font-semibold text-ink-800">
-                Generative AI & Gemini
-              </div>
             </div>
           </div>
 

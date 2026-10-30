@@ -1,65 +1,20 @@
 import React from 'react';
 import { portfolioData } from '../../data/portfolio';
 import { ImageWithFallback } from '../common/ImageWithFallback';
-import { Github, Linkedin, Mail, Sparkles, FileText, ArrowDown } from 'lucide-react';
+import { Sparkles, FileText, ArrowDown } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   const { personal } = portfolioData;
 
   return (
-    <section className="relative min-h-[95vh] pt-32 pb-20 md:pt-36 md:pb-28 flex flex-col justify-center overflow-hidden bg-ivory-100">
+    <section className="relative min-h-[92vh] pt-28 pb-20 md:pt-32 md:pb-28 flex flex-col justify-center overflow-hidden bg-ivory-100">
       {/* Background Subtle Ambient Glow */}
       <div className="absolute top-10 right-10 w-[500px] h-[500px] bg-earth-100/40 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="absolute bottom-10 left-10 w-[400px] h-[400px] bg-ivory-300/40 rounded-full blur-2xl pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full relative">
-        {/* Top Tagline & Education Pill */}
-        <div className="flex flex-wrap items-center justify-between gap-4 mb-6 md:mb-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-earth-100 border border-earth-200 text-earth-800 text-xs font-mono font-medium">
-            <span className="w-2 h-2 rounded-full bg-earth-500 animate-pulse" />
-            <span>{personal.education.status}</span>
-            <span className="text-earth-300">•</span>
-            <span>PSCMRCET / JNTUK</span>
-            <span className="text-earth-300">•</span>
-            <span className="font-bold">CGPA {personal.education.cgpa}</span>
-          </div>
-
-          <div className="flex items-center gap-3 text-xs font-mono text-ink-500">
-            <a
-              href={personal.social.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-earth-600 transition-colors flex items-center gap-1"
-              title="GitHub"
-            >
-              <Github className="w-3.5 h-3.5" />
-              <span>GitHub</span>
-            </a>
-            <span>•</span>
-            <a
-              href={personal.social.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-earth-600 transition-colors flex items-center gap-1"
-              title="LinkedIn"
-            >
-              <Linkedin className="w-3.5 h-3.5" />
-              <span>LinkedIn</span>
-            </a>
-            <span>•</span>
-            <a
-              href={`mailto:${personal.contact.email}`}
-              className="hover:text-earth-600 transition-colors flex items-center gap-1"
-              title="Email"
-            >
-              <Mail className="w-3.5 h-3.5" />
-              <span>Email</span>
-            </a>
-          </div>
-        </div>
-
-        {/* GIANT EDITORIAL NAME BACKGROUND (Direct inspiration from Akhilesh's reference) */}
-        <div className="relative w-full flex items-center justify-center py-6 md:py-12 select-none pointer-events-none">
+        {/* GIANT EDITORIAL NAME BACKGROUND (Direct inspiration from reference) */}
+        <div className="relative w-full flex items-center justify-center py-4 md:py-8 select-none pointer-events-none">
           <h1 className="text-[18vw] font-display font-black text-ink-900 tracking-tighter leading-[0.8] text-center w-full uppercase opacity-[0.95]">
             {personal.displayName}
           </h1>

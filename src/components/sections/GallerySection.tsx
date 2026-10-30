@@ -16,49 +16,38 @@ export const GallerySection: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-8 border-b border-ivory-300">
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-earth-600 font-semibold block mb-2">
-              07 // Moments & Collaboration
+              07 // MOMENTS & COMPETITION STAGES
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-ink-900 tracking-tight">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-display font-black text-ink-900 tracking-tight">
               Event Gallery
             </h2>
           </div>
           <div className="text-sm font-mono text-ink-500 max-w-sm">
-            Snapshots from hackathons, technical demonstrations, research exchanges, and team sprints.
+            Live jury defenses, quantum team sprints, and award ceremonies.
           </div>
         </div>
 
-        {/* Asymmetrical Editorial Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {gallery.map((item, index) => {
-            // Apply varied grid spans or aspect ratios for an editorial magazine feel
-            const isTall = index === 1 || index === 4;
+        {/* Clean Balanced Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {gallery.map((item) => (
+            <div
+              key={item.id}
+              onClick={() => setSelectedPhoto(item)}
+              className="group relative rounded-2xl overflow-hidden bg-white border border-ivory-300 shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col justify-between hover:-translate-y-1"
+            >
+              <div className="overflow-hidden">
+                <ImageWithFallback
+                  image={item.image}
+                  title={item.title}
+                  categoryLabel={item.category}
+                  aspectClass="aspect-[4/3]"
+                  className="w-full"
+                />
+              </div>
 
-            return (
-              <div
-                key={item.id}
-                onClick={() => setSelectedPhoto(item)}
-                className={`group relative rounded-2xl overflow-hidden bg-white border border-ivory-300 shadow-sm hover:shadow-md transition-all cursor-pointer ${
-                  isTall ? 'md:row-span-1' : ''
-                }`}
-              >
-                <div className="overflow-hidden">
-                  <ImageWithFallback
-                    image={item.image}
-                    title={item.title}
-                    categoryLabel={item.category}
-                    aspectClass={
-                      item.aspectRatio === 'portrait'
-                        ? 'aspect-[3/4]'
-                        : item.aspectRatio === 'square'
-                        ? 'aspect-square'
-                        : 'aspect-[16/10]'
-                    }
-                    className="w-full"
-                  />
-                </div>
-
-                {/* Caption Footer */}
-                <div className="p-4 bg-white border-t border-ivory-200 flex flex-col justify-between">
+              {/* Caption Footer */}
+              <div className="p-4 bg-white border-t border-ivory-200 flex flex-col justify-between flex-1">
+                <div>
                   <div className="flex items-center justify-between text-[11px] font-mono text-ink-500 mb-1">
                     <span className="text-earth-600 font-semibold">{item.category}</span>
                     <span>{item.date}</span>
@@ -66,18 +55,18 @@ export const GallerySection: React.FC = () => {
                   <h4 className="text-sm font-bold text-ink-900 group-hover:text-earth-600 transition-colors line-clamp-1">
                     {item.title}
                   </h4>
-                  <p className="text-xs text-ink-500 line-clamp-1 mt-1 font-mono">
+                  <p className="text-xs text-ink-500 line-clamp-2 mt-1 font-mono">
                     {item.caption}
                   </p>
                 </div>
-
-                {/* Hover overlay hint */}
-                <div className="absolute top-3 right-3 p-2 rounded-full bg-ink-900/70 text-white opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur">
-                  <Maximize2 className="w-3.5 h-3.5" />
-                </div>
               </div>
-            );
-          })}
+
+              {/* Hover overlay hint */}
+              <div className="absolute top-3 right-3 p-2 rounded-full bg-ink-900/70 text-white opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur">
+                <Maximize2 className="w-3.5 h-3.5" />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 

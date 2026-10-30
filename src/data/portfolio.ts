@@ -11,17 +11,16 @@ export const portfolioData: PortfolioData = {
     heroGreeting: "Hi, I'm Sahithi, a passionate Computer Science Engineering student dedicated to building intelligent systems through AI, ML, and Quantum innovations.",
     conciseBio: "Computer Science and Engineering student with hands-on experience in Java development, Object-Oriented Programming, Data Structures and Algorithms, and SQL, with strong practical experience in AI/ML, Generative AI, and Quantum Computing. Led team Quantum Coders to 1st place in the Amaravati Quantum Valley Hackathon semifinals and Grand Finale qualification.",
     fullBio: [
-      "I'm Sahithi — a Computer Science Engineering student passionate about transforming complex algorithmic ideas into intelligent, real-world solutions. With an academic CGPA of 8.9 / 10.0 and hands-on experience across multiple internships, I've built a strong foundation in software engineering, Quantum Computing, AI/ML, and cloud systems, driven by deep curiosity and continuous learning.",
-      "Through hands-on engineering roles at ElevateIQ Soft Tech, Infosys Springboard, Edunet Foundation, and Axcentra, I've developed end-to-end multimodal forensics systems, dynamic pricing engines, intelligent chatbots, and cloud workflows.",
-      "One of my flagship achievements was leading team 'Quantum Coders' to secure 1st place in the semifinals of the Amaravati Quantum Valley Hackathon 2025 (AQVH916) and advancing to the Grand Finale with an INR 10,000 prize. We engineered a hybrid quantum-classical QAOA portfolio optimizer, earning recognition from APSCHE, IBM, and TCS with regional media coverage.",
-      "I was also selected among the top 3,000 out of 65,000+ applicants for the WISER (BQPhy®) Quantum Computing Program, earned a fully funded $1,000 seat in the WISER Summer Program 2026, and received the Quantum Innovation Excellence Award at SRM University AP's 36-hour QC² national hackathon."
+      "I am a Computer Science Engineering student currently pursuing B.Tech with an 8.9 CGPA, focused on architecting intelligent applications across AI/ML, Quantum Computing (QAOA), and modern Java backend systems.",
+      "With hands-on software development experience at ElevateIQ Soft Tech and Infosys Springboard, I specialize in building multimodal forensics platforms, dynamic pricing models, and quantum variational optimization algorithms.",
+      "A proactive team lead and fast learner, I led team 'Quantum Coders' to 1st place in the Amaravati Quantum Valley Hackathon semifinals and was selected for the prestigious global WISER Quantum Computing Program."
     ],
     problemSolvingPhilosophy: "Code with purpose, learn with passion, and build with heart. First-principles deconstruction, modular software design, and verifiable algorithmic correctness.",
     education: {
       college: "PSCMR College of Engineering and Technology (PSCMRCET)",
       university: "Jawaharlal Nehru Technological University Kakinada (JNTUK)",
       degree: "B.Tech in Computer Science and Engineering",
-      status: "Currently Pursuing B.Tech", // NEVER graduate or 2027 graduate
+      status: "Currently Pursuing B.Tech",
       cgpa: "8.9 / 10.0",
       location: "Vijayawada, Andhra Pradesh, India",
       highlight: "Academic distinction with 8.9 CGPA, Department technical leadership, and national hackathon finalist recognitions."
@@ -88,18 +87,10 @@ export const portfolioData: PortfolioData = {
     ]
   },
 
-  // Organizations & Internships ticker for the dark band
+  // Filtered organizations
   companiesWorkedWith: [
     { name: "ElevateIQ Soft Tech", role: "Java Software Engineer", period: "Aug 2026 – Present" },
-    { name: "Infosys Springboard", role: "AI Intern & Pragati Cohort 5", period: "2025" },
-    { name: "Edunet Foundation", role: "AI & Cloud Intern", period: "2025" },
-    { name: "Axcentra", role: "ML & AI Intern", period: "2025" },
-    { name: "SkillDzire", role: "Artificial Intelligence Intern", period: "2025" },
-    { name: "WISER Quantum (BQPhy®)", role: "Selected Cohort & Summer 2026", period: "2025 – 2026" },
-    { name: "SRM University AP (QC²)", role: "Quantum Innovation Award", period: "2026" },
-    { name: "Skill Wallet", role: "AI/ML Training", period: "2026" },
-    { name: "CodeAlpha", role: "Python Programming Intern", period: "2025" },
-    { name: "StaxTech", role: "Software Developer", period: "2025" }
+    { name: "Infosys Springboard", role: "Artificial Intelligence Intern", period: "Sept 2025 – Dec 2025" }
   ],
 
   expertise: [
@@ -175,6 +166,7 @@ export const portfolioData: PortfolioData = {
     }
   ],
 
+  // Filtered to ElevateIQ and Infosys Springboard as requested
   experience: [
     {
       id: "elevateiq-java",
@@ -205,51 +197,6 @@ export const portfolioData: PortfolioData = {
         "Executed model evaluation pipelines, hyperparameter tuning, and metric benchmarking."
       ],
       technologies: ["Python", "NLP", "Machine Learning", "Scikit-learn", "Chatbot Development", "Pandas"]
-    },
-    {
-      id: "infosys-pragati-cohort5",
-      role: "Pragati Path To Future (Cohort-5)",
-      company: "Infosys Springboard",
-      period: "April 2025 – July 2025",
-      location: "Virtual / Remote",
-      type: "Selective 10-Week Cohort",
-      summary: "Completed the prestigious Infosys Pragathi Cohort 5 program gaining practical exposure to Python programming, data science fundamentals, AI concepts, and core software engineering principles.",
-      responsibilities: [
-        "Mastered advanced Python programming, data science workflows, and software engineering design principles.",
-        "Collaborated with peers on team-based technical sprints and modular software deliverables.",
-        "Refined technical communication, resume building, and professional development through structured instructor-led modules."
-      ],
-      technologies: ["Python", "Data Science", "AI Fundamentals", "Software Engineering", "Agile Collaboration"]
-    },
-    {
-      id: "edunet-ai-cloud",
-      role: "Artificial Intelligence & Cloud Technology Intern",
-      company: "Edunet Foundation",
-      period: "September 2025 – November 2025",
-      location: "Virtual / Remote",
-      type: "AI & Cloud Internship",
-      summary: "Worked as an AI & Cloud Intern developing an AI-based Travel Planner web application with real-time multi-API orchestration.",
-      responsibilities: [
-        "Developed an AI-based Travel Planner web app using Python and Streamlit.",
-        "Integrated OpenAI, OpenWeather, and OpenCage APIs for real-time itinerary generation, live weather data, and location mapping.",
-        "Gained hands-on experience in API integration, cloud deployment, and AI-driven application development."
-      ],
-      technologies: ["Python", "Streamlit", "OpenAI API", "OpenWeather API", "OpenCage API", "Cloud Deployment"]
-    },
-    {
-      id: "axcentra-intern",
-      role: "Machine Learning & AI Intern",
-      company: "Axcentra",
-      period: "October 2025 – November 2025",
-      location: "Virtual / Remote",
-      type: "Internship",
-      summary: "Collaborated on machine learning model development, data preprocessing pipelines, and exploratory data analysis for intelligent predictive services.",
-      responsibilities: [
-        "Implemented supervised learning pipelines and evaluated performance on structured datasets.",
-        "Cleaned and engineered domain-specific features to boost classification and regression metrics.",
-        "Documented algorithmic findings and presented results to senior engineering mentors."
-      ],
-      technologies: ["Python", "Scikit-Learn", "Data Preprocessing", "Feature Engineering", "Git"]
     }
   ],
 
@@ -328,111 +275,9 @@ export const portfolioData: PortfolioData = {
     }
   ],
 
-  additionalProjects: [
-    {
-      id: "ai-travel-planner",
-      title: "AI-Powered Travel Planner",
-      category: "generative-ai",
-      categoryLabel: "Generative AI & Cloud",
-      featured: false,
-      tagline: "Multi-API intelligent itinerary generation and live mapping",
-      description: "Built during Edunet Foundation internship using Python and Streamlit. Integrates OpenAI, OpenWeather, and OpenCage APIs for real-time personalized travel planning, weather forecasting, and location intelligence.",
-      highlights: ["OpenAI LLM prompt orchestration", "Live weather and geo-coordinate APIs", "Interactive Streamlit UI"],
-      technologies: ["Python", "Streamlit", "OpenAI API", "OpenWeather", "OpenCage"],
-      githubUrl: "https://github.com/Parepallinagavenkatasahithi",
-      image: {
-        src: "/assets/images/projects/travel_planner.jpg",
-        alt: "AI Travel Planner Interface",
-        aspectRatio: "landscape"
-      }
-    },
-    {
-      id: "ai-nlp-chatbot",
-      title: "Intelligent Customer Support Chatbot",
-      category: "ai-ml",
-      categoryLabel: "NLP & Conversational AI",
-      featured: false,
-      tagline: "High-accuracy intent recognition chatbot for automated query resolution",
-      description: "Developed during Infosys Springboard AI internship. Employs NLP preprocessing, TF-IDF / transformer embeddings, and intent classification achieving 90%+ query accuracy for automated support workflows.",
-      highlights: ["90%+ query intent accuracy", "Contextual fallback handling", "Low latency inference"],
-      technologies: ["Python", "NLP", "Scikit-Learn", "Flask", "NLTK"],
-      githubUrl: "https://github.com/Parepallinagavenkatasahithi",
-      image: {
-        src: "/assets/images/projects/ai_chatbot.jpg",
-        alt: "Intelligent Customer Support Chatbot",
-        aspectRatio: "landscape"
-      }
-    },
-    {
-      id: "quantum-circuit-bench",
-      title: "Quantum Circuit Depth & Noise Analyzer",
-      category: "quantum",
-      categoryLabel: "Quantum Computing",
-      featured: false,
-      tagline: "NISQ noise model simulation and quantum gate depth analyzer",
-      description: "Evaluates quantum circuit fidelity across noisy quantum channels with depolarizing errors, thermal relaxation, and gate dephasing using Qiskit Aer simulator.",
-      highlights: ["Gate count decomposition", "Noise model comparisons", "State tomography"],
-      technologies: ["Qiskit", "Aer Simulator", "Python", "NumPy"],
-      githubUrl: "https://github.com/Parepallinagavenkatasahithi",
-      image: {
-        src: "/assets/images/projects/quantum_bench.jpg",
-        alt: "Quantum circuit benchmarking visualization",
-        aspectRatio: "landscape"
-      }
-    },
-    {
-      id: "enterprise-java-core",
-      title: "ElevateIQ Java Core Services",
-      category: "software",
-      categoryLabel: "Software Engineering",
-      featured: false,
-      tagline: "Structured OOP Java backend modules and API handlers",
-      description: "Modular enterprise Java application routines engineered with clean architecture, robust exception handling, and relational DBMS persistence.",
-      highlights: ["Clean OOP architecture", "Robust exception handling", "REST API integration"],
-      technologies: ["Java", "OOP", "SQL", "REST APIs", "Git"],
-      githubUrl: "https://github.com/Parepallinagavenkatasahithi",
-      image: {
-        src: "/assets/images/projects/java_backend.jpg",
-        alt: "Enterprise Java Core architecture",
-        aspectRatio: "landscape"
-      }
-    },
-    {
-      id: "route-optimization-engine",
-      title: "Algorithmic Route & Fleet Optimizer",
-      category: "data-science",
-      categoryLabel: "Optimization & Graph Algorithms",
-      featured: false,
-      tagline: "Vehicle routing and cost-minimization optimization engine",
-      description: "Applies graph algorithms, heuristic distance matrices, and constraint satisfaction to optimize delivery routing and travel times.",
-      highlights: ["Graph distance matrices", "Heuristic optimization", "Cost reduction simulations"],
-      technologies: ["Python", "NumPy", "Pandas", "Matplotlib"],
-      githubUrl: "https://github.com/Parepallinagavenkatasahithi",
-      image: {
-        src: "/assets/images/projects/route_optimizer.jpg",
-        alt: "Route Optimization Engine",
-        aspectRatio: "landscape"
-      }
-    },
-    {
-      id: "genai-gemini-suite",
-      title: "Gemini & Vertex AI Multimodal Assistant",
-      category: "generative-ai",
-      categoryLabel: "Generative AI",
-      featured: false,
-      tagline: "Exploration of Gemini 1.5 and Imagen on Vertex AI",
-      description: "Hands-on projects built with Google AI Studio and Vertex AI exploring multi-turn conversational agents, multimodal vision prompts, and Imagen image generation pipelines.",
-      highlights: ["Gemini API integration", "Multimodal prompt engineering", "Vertex AI deployment"],
-      technologies: ["Google AI Studio", "Vertex AI", "Gemini API", "Python"],
-      githubUrl: "https://github.com/Parepallinagavenkatasahithi",
-      image: {
-        src: "/assets/images/projects/gemini_assistant.jpg",
-        alt: "Gemini and Vertex AI Suite",
-        aspectRatio: "landscape"
-      }
-    }
-  ],
+  additionalProjects: [],
 
+  // Academic honors item removed as requested
   achievements: [
     {
       id: "aqvh-challenge",
@@ -529,29 +374,24 @@ export const portfolioData: PortfolioData = {
         alt: "Quantum Innovation Excellence Award at QC² SRM AP",
         caption: "36-hour national hackathon innovation award at SRM University AP."
       }
-    },
-    {
-      id: "academic-distinction",
-      title: "Academic Excellence — 8.9 CGPA & Department Honors",
-      organization: "PSCMR College of Engineering and Technology (PSCMRCET)",
-      date: "Ongoing",
-      badge: "CGPA: 8.9 / 10.0",
-      stage: "Institutional Honors",
-      description: "Maintaining a stellar cumulative GPA of 8.9/10 while actively driving technical hackathons, peer workshops, and research initiatives.",
-      impactPoints: [
-        "Consistent top-tier academic standing across core CS curriculum.",
-        "Mentoring peers in Java, data structures, and algorithmic optimization.",
-        "Schooling foundations: 91% in Intermediate (MPC) and 98% in Class X."
-      ],
-      image: {
-        src: "/assets/images/achievements/academic_honors.jpg",
-        alt: "Academic Distinction and Department Honors",
-        caption: "Academic distinction with 8.9 CGPA at PSCMRCET."
-      }
     }
   ],
 
+  // Certifications updated and renamed as requested
   certifications: [
+    {
+      id: "cert-nptel-java",
+      title: "Certification on Java Programming",
+      issuer: "NPTEL",
+      issueDate: "Certified by NPTEL",
+      credentialId: "NPTEL-JAVA-VERIFIED",
+      credentialUrl: "https://github.com/Parepallinagavenkatasahithi",
+      skills: ["Java Programming", "OOP Fundamentals", "Data Structures", "Structured Coding"],
+      image: {
+        src: "/assets/images/certificates/java_cert.jpg",
+        alt: "Certification on Java Programming - NPTEL"
+      }
+    },
     {
       id: "cert-quantum-algo",
       title: "Quantum Algorithm Fundamentals and Hands-on Training",
@@ -566,32 +406,6 @@ export const portfolioData: PortfolioData = {
       }
     },
     {
-      id: "cert-wiser-quantum",
-      title: "Quantum Fundamentals from WISER",
-      issuer: "WISER (BQPhy®)",
-      issueDate: "Verified Program",
-      credentialId: "WISER-Q-FUNDAMENTALS",
-      credentialUrl: "https://github.com/Parepallinagavenkatasahithi",
-      skills: ["Quantum Physics", "Quantum Computation", "Linear Algebra", "Qubit Systems"],
-      image: {
-        src: "/assets/images/certificates/wiser_cert.jpg",
-        alt: "WISER Quantum Fundamentals Certificate"
-      }
-    },
-    {
-      id: "cert-gemini-vertex",
-      title: "Explore Generative AI with the Gemini API in Vertex AI",
-      issuer: "Google Cloud / Vertex AI",
-      issueDate: "Google Cloud Credential",
-      credentialId: "GCLOUD-GEMINI-VERTEX",
-      credentialUrl: "https://github.com/Parepallinagavenkatasahithi",
-      skills: ["Gemini API", "Vertex AI", "Prompt Engineering", "Multimodal LLMs"],
-      image: {
-        src: "/assets/images/certificates/google_cert.jpg",
-        alt: "Google Cloud Vertex AI Gemini Certificate"
-      }
-    },
-    {
       id: "cert-gemini-imagen",
       title: "Build Real World AI Applications with Gemini and Imagen",
       issuer: "Google / Google AI Studio",
@@ -603,48 +417,10 @@ export const portfolioData: PortfolioData = {
         src: "/assets/images/certificates/imagen_cert.jpg",
         alt: "Gemini and Imagen Real World AI Applications Certificate"
       }
-    },
-    {
-      id: "cert-aws-apac",
-      title: "AWS APAC - Solutions Architecture Job Simulation",
-      issuer: "Amazon Web Services (AWS) / Forage",
-      issueDate: "AWS Credential",
-      credentialId: "AWS-APAC-ARCH-SIM",
-      credentialUrl: "https://github.com/Parepallinagavenkatasahithi",
-      skills: ["Cloud Architecture", "AWS Well-Architected", "Scalability", "System Security"],
-      image: {
-        src: "/assets/images/certificates/aws_cert.jpg",
-        alt: "AWS APAC Solutions Architecture Certificate"
-      }
-    },
-    {
-      id: "cert-java-se",
-      title: "Java SE Programming & Object-Oriented Architecture",
-      issuer: "ElevateIQ Soft Tech",
-      issueDate: "Professional Credential",
-      credentialId: "ELEVATEIQ-JAVA-DEV",
-      credentialUrl: "https://github.com/Parepallinagavenkatasahithi",
-      skills: ["Core Java", "OOP Architecture", "Data Structures", "Multi-threading", "Exception Handling"],
-      image: {
-        src: "/assets/images/certificates/java_cert.jpg",
-        alt: "Java SE Programming Certificate"
-      }
-    },
-    {
-      id: "cert-ml-spec",
-      title: "Machine Learning & Statistical Pipelines Specialization",
-      issuer: "Machine Learning Foundations / GDSC",
-      issueDate: "Verified Specialization",
-      credentialId: "ML-PIPELINES-VERIFIED",
-      credentialUrl: "https://github.com/Parepallinagavenkatasahithi",
-      skills: ["Supervised Learning", "Gradient Boosting", "Deep Learning", "Evaluation Metrics"],
-      image: {
-        src: "/assets/images/certificates/ml_cert.jpg",
-        alt: "Machine Learning Specialization Certificate"
-      }
     }
   ],
 
+  // Gallery items with WISER gathering and AI Workshop removed as requested
   gallery: [
     {
       id: "hackathon-stage",
@@ -682,32 +458,6 @@ export const portfolioData: PortfolioData = {
       image: {
         src: "/assets/images/gallery/gallery_project_demo.jpg",
         alt: "TrustLens.AI Live System Demonstration",
-        objectPosition: "center"
-      }
-    },
-    {
-      id: "workshop-lab",
-      title: "AI Hands-On Technical Deep-Dive",
-      category: "Workshop",
-      date: "Technical Deep-Dive",
-      caption: "Hands-on session exploring deep feature representations and gradient attribution maps.",
-      aspectRatio: "landscape",
-      image: {
-        src: "/assets/images/gallery/gallery_workshop.jpg",
-        alt: "AI Technical Workshop Session",
-        objectPosition: "center"
-      }
-    },
-    {
-      id: "wiser-session",
-      title: "WISER Quantum Cohort Gathering",
-      category: "Technical Event",
-      date: "Research Exchange",
-      caption: "Collaborating with researchers and international peers in the WISER initiative.",
-      aspectRatio: "portrait",
-      image: {
-        src: "/assets/images/gallery/gallery_wiser_event.jpg",
-        alt: "WISER Quantum Cohort Gathering",
         objectPosition: "center"
       }
     },

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowUpRight, FileText } from 'lucide-react';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { portfolioData } from '../../data/portfolio';
 
 const navItems = [
@@ -64,23 +64,10 @@ export const Navbar: React.FC = () => {
           </nav>
         </div>
 
-        {/* Action Button */}
-        <div className="hidden sm:flex items-center gap-3">
-          <a
-            href={portfolioData.personal.resumePath}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 text-xs font-bold uppercase tracking-wider bg-ink-900 hover:bg-earth-600 text-ivory-100 transition-all duration-200 shadow-xs hover:shadow flex items-center gap-1.5"
-          >
-            <FileText className="w-3.5 h-3.5" />
-            <span>RESUME</span>
-          </a>
-        </div>
-
         {/* Mobile Hamburger Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden p-2 text-ink-900 hover:text-earth-600 transition-colors focus:outline-none"
+          className="lg:hidden p-2 text-ink-900 hover:text-earth-600 transition-colors focus:outline-none ml-auto"
           aria-label="Toggle mobile menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -106,19 +93,6 @@ export const Navbar: React.FC = () => {
                 <ArrowUpRight className="w-4 h-4 text-ink-400" />
               </a>
             ))}
-
-            <div className="pt-4">
-              <a
-                href={portfolioData.personal.resumePath}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setMobileMenuOpen(false)}
-                className="w-full flex items-center justify-center gap-2 py-3 bg-ink-900 text-ivory-100 font-bold text-xs uppercase tracking-wider hover:bg-earth-600 transition-colors"
-              >
-                <FileText className="w-4 h-4" />
-                <span>DOWNLOAD RESUME</span>
-              </a>
-            </div>
           </nav>
         </div>
       )}

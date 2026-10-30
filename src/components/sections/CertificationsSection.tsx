@@ -23,16 +23,16 @@ export const CertificationsSection: React.FC = () => {
             </h2>
           </div>
           <div className="text-sm font-mono text-ink-500 max-w-sm">
-            Verified credentials from Google Cloud, AWS, WISER, ElevateIQ, and Qiskit.
+            Verified technical credentials from NPTEL, Qiskit Community, and Google AI.
           </div>
         </div>
 
         {/* Certifications Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((cert) => (
             <div
               key={cert.id}
-              className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-ivory-300 shadow-2xs hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
+              className="flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-white border border-ivory-300 shadow-2xs hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
             >
               <div>
                 {/* Certificate Preview Card */}
@@ -58,13 +58,19 @@ export const CertificationsSection: React.FC = () => {
                   <span>{cert.issueDate}</span>
                 </div>
 
-                <h3 className="text-base font-bold text-ink-900 tracking-tight leading-snug group-hover:text-earth-600 transition-colors mb-1.5">
+                <h3 className="text-lg font-bold text-ink-900 tracking-tight leading-snug group-hover:text-earth-600 transition-colors mb-1.5">
                   {cert.title}
                 </h3>
 
-                <p className="text-xs font-mono text-ink-500 mb-3 font-medium">
+                <p className="text-xs font-mono text-ink-600 mb-3 font-semibold">
                   {cert.issuer}
                 </p>
+
+                {cert.id === 'cert-nptel-java' && (
+                  <p className="text-xs text-ink-600 leading-relaxed mb-4 bg-ivory-100 p-2.5 rounded border border-ivory-200 font-sans">
+                    Certified by NPTEL in Java programming with strong focus on fundamentals and structured coding.
+                  </p>
+                )}
 
                 {/* Skills tags */}
                 <div className="flex flex-wrap gap-1 mb-4">
@@ -120,6 +126,11 @@ export const CertificationsSection: React.FC = () => {
               <p className="text-xs font-mono text-ink-500">
                 Issued by <strong className="text-ink-800">{selectedCert.issuer}</strong> ({selectedCert.issueDate})
               </p>
+              {selectedCert.id === 'cert-nptel-java' && (
+                <p className="text-xs text-ink-700 leading-relaxed font-sans bg-ivory-100 p-3 rounded border border-ivory-200">
+                  Certified by NPTEL in Java programming with strong focus on fundamentals and structured coding.
+                </p>
+              )}
               {selectedCert.credentialId && (
                 <p className="text-xs font-mono bg-ivory-200 px-3 py-1.5 rounded text-ink-700 inline-block font-semibold">
                   Credential ID: {selectedCert.credentialId}
