@@ -13,7 +13,7 @@ export const HeroSection: React.FC = () => {
       <div className="absolute bottom-10 left-10 w-[400px] h-[400px] bg-ivory-300/40 rounded-full blur-2xl pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full relative">
-        {/* GIANT EDITORIAL NAME BACKGROUND (Slightly decreased size for balanced visual harmony) */}
+        {/* GIANT EDITORIAL NAME BACKGROUND */}
         <div className="relative w-full flex items-center justify-center py-4 md:py-6 select-none pointer-events-none">
           <h1 className="text-[14.5vw] font-display font-black text-ink-900 tracking-tighter leading-[0.8] text-center w-full uppercase opacity-[0.95]">
             {personal.displayName}
@@ -40,8 +40,8 @@ export const HeroSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Center Column: Iconic Tilted Portrait Card (Clean frame without footer bar) */}
-          <div className="md:col-span-4 lg:col-span-6 flex justify-center order-1 md:order-2">
+          {/* Center Column: Iconic Tilted Portrait Card (Moved downwards for balanced alignment) */}
+          <div className="md:col-span-4 lg:col-span-6 flex justify-center order-1 md:order-2 translate-y-3 sm:translate-y-5 md:translate-y-8">
             <div className="relative w-64 sm:w-72 md:w-80 lg:w-96 transform -rotate-2 hover:rotate-0 transition-transform duration-500 ease-out">
               {/* Card Container */}
               <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden bg-white p-2.5 sm:p-3 shadow-2xl border-2 border-ink-900/10 hover:border-ink-900/30 transition-all">
