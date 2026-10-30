@@ -41,7 +41,7 @@ export const HeroSection: React.FC = () => {
           </div>
 
           {/* Center Column: Iconic Tilted Portrait Card (Moved downwards for balanced alignment) */}
-          <div className="md:col-span-4 lg:col-span-6 flex justify-center order-1 md:order-2 translate-y-3 sm:translate-y-5 md:translate-y-8">
+          <div className="md:col-span-4 lg:col-span-6 flex justify-center order-1 md:order-2 translate-y-6 sm:translate-y-8 md:translate-y-12 lg:translate-y-14">
             <div className="relative w-64 sm:w-72 md:w-80 lg:w-96 transform -rotate-2 hover:rotate-0 transition-transform duration-500 ease-out">
               {/* Card Container */}
               <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden bg-white p-2.5 sm:p-3 shadow-2xl border-2 border-ink-900/10 hover:border-ink-900/30 transition-all">
