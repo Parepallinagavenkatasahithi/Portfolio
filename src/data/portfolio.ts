@@ -264,7 +264,7 @@ export const portfolioData: PortfolioData = {
         "Engineered an interactive desktop / visualization GUI using PySide6."
       ],
       technologies: ["Python", "Qiskit", "QAOA", "PennyLane", "CVXPY", "PySide6", "NumPy", "Matplotlib"],
-      githubUrl: "https://github.com/Parepallinagavenkatasahithi/Hybrid-Quantum-Portfolio-Optimization",
+      githubUrl: "https://github.com/Parepallinagavenkatasahithi/hybrid-quantum-portfolio",
       liveUrl: undefined,
       image: {
         src: "/assets/images/projects/quantum_portfolio.jpg",
